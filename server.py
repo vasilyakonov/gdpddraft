@@ -20,12 +20,11 @@
 
 import os
 import tweepy
-from secrets import *
 from time import gmtime, strftime
 
 
 # ====== Individual bot configuration ==========================
-bot_username = ''
+bot_username = '@worthit_iam'
 logfile_name = bot_username + ".log"
 
 # ==============================================================
