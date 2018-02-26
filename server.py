@@ -21,6 +21,9 @@
 
 import os
 import tweepy
+import requests
+import json
+import random
 from time import gmtime, strftime
 
 
@@ -34,8 +37,31 @@ logfile_name = bot_username + ".log"
 def create_tweet():
   """Create the text of the tweet you want to send."""
   # Replace this with your code!
-  text = "Monkey"
-  return text
+  
+  bird_response = requests.get('https://botwiki.org/api/corpora/data/animals/birds_north_america.json')
+  the_birds = bird_response.json()
+  bird_list = []
+  
+  for f in the_birds['birds']:
+    for bird in f['members']:
+      bird_list.append(bird)
+
+  n = random.randint(0,len(bird_list))
+  the_bird = bird_list[n]
+
+  plant_response = requests.get('https://botwiki.org/api/corpora/data/plants/plants.json')
+  the_plants = plant_response.json()
+  plant_list = []
+
+  for p in the_plants['instruments']:
+    plant_list.append(p['name'])
+
+  m = random.randint(0,len(plant_list))
+  the_plant = plant_list[m]
+
+  the_saying = "A %s in the hand is worth two in the %s" % (the_bird,the_plant)
+  
+  return the_saying
 
 
 def tweet(text):
@@ -45,7 +71,7 @@ def tweet(text):
   auth.set_access_token(os.environ['A_TOKEN'], os.environ['A_TOKEN_SECRET'])
   api = tweepy.API(auth)
 
-    # Send the tweet and log success or failure
+  # Send the tweet and log success or failure
   # try:
   api.update_status(text)
   # except tweepy.error.TweepError as e:
@@ -59,7 +85,6 @@ def tweet(text):
 #   with open(os.path.join(path, logfile_name), 'a+') as f:
 #     t = strftime("%d %b %Y %H:%M:%S", gmtime())
 #     f.write("\n" + t + " " + message)
-
 
 if __name__ == "__main__":
   tweet_text = create_tweet()
