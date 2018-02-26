@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright (c) 2015–2016 Molly White
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -40,8 +41,8 @@ def create_tweet():
 def tweet(text):
     """Send out the text as a tweet."""
     # Twitter authentication
-    auth = tweepy.OAuthHandler(C_KEY, C_SECRET)
-    auth.set_access_token(A_TOKEN, A_TOKEN_SECRET)
+    auth = tweepy.OAuthHandler(os.environ['C_KEY'], os.environ['C_SECRET'])
+    auth.set_access_token(os.environ['A_TOKEN'], os.environ['A_TOKEN_SECRET'])
     api = tweepy.API(auth)
 
     # Send the tweet and log success or failure
