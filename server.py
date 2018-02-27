@@ -40,8 +40,7 @@ def create_tweet():
 
   the_tweet = "A %s samiyam commence %s" % (the_bird,the_plant)
   
-  img = "http://animalia-life.com/data_images/bird/bird1.jpg"
-  api.update_with_media(img, status="Nice one")
+  
   
   return the_tweet
 
