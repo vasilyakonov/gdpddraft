@@ -4,8 +4,9 @@ import tweepy
 
 
 def tweet_image(url, message):
-    api = twitter_api()
-    filename = 'temp.jpg'
+    url = "https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2Fe813cbb64ced5d7d8cc24a0789720729.jpg?1519725876589"
+    api = tweepy.API()
+    filename = 'e813cbb64ced5d7d8cc24a0789720729.jpg'
     request = requests.get(url, stream=True)
     if request.status_code == 200:
         with open(filename, 'wb') as image:
@@ -16,6 +17,8 @@ def tweet_image(url, message):
         os.remove(filename)
     else:
         print("Unable to download image")
+        
+    return the_tweet
 
 
 #def tweet_image(url, message):
@@ -60,7 +63,9 @@ def tweet(text):
 #url = "https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2Fe813cbb64ced5d7d8cc24a0789720729.jpg?1519725876589"
 #message = "Nice one"
 #tweet_image(url, message)
+url = "https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2Fe813cbb64ced5d7d8cc24a0789720729.jpg?1519725876589"
+message = "1"
 if __name__ == "__main__":
-  tweet_image = create_tweet()
+  tweet_image = tweet_image(url,message)
   tweet(tweet_image)
   
