@@ -9,7 +9,7 @@ from time import gmtime, strftime
 
 
 # ====== Individual bot configuration ==========================
-bot_username = '@worthit_iam'
+bot_username = '@XmrpibbX'
 logfile_name = bot_username + ".log"
 # ==============================================================
 
