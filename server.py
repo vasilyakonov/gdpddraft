@@ -15,7 +15,7 @@ def tweet(file,text):
   api.update_with_media(file,text)
   
 def tweet_image():
-    filename = urllib.urlopen('https://kotofoto.ru/UserFiles/Image/category/3100/138527_vinilovaya_plastinka_joy_division_unknown_pleasuresm.jpg')
+    filename = urllib.urlretrieve('https://kotofoto.ru/UserFiles/Image/category/3100/138527_vinilovaya_plastinka_joy_division_unknown_pleasuresm.jpg')
     #filename = 'e813cbb64ced5d7d8cc24a0789720729.jpg'
     text = "Hello!"
     
