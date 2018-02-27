@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 import requests
-import urllib
 import os
 import tweepy
+import shutil
 
 def tweet(file,text):
   """Send out the text as a tweet."""
@@ -15,8 +15,13 @@ def tweet(file,text):
   api.update_with_media(file,text)
   
 def tweet_image():
-    filename = urllib.urlretrieve('https://kotofoto.ru/UserFiles/Image/category/3100/138527_vinilovaya_plastinka_joy_division_unknown_pleasuresm.jpg')
-    #filename = 'e813cbb64ced5d7d8cc24a0789720729.jpg'
+    url = 'https://kotofoto.ru/UserFiles/Image/category/3100/138527_vinilovaya_plastinka_joy_division_unknown_pleasuresm.jpg'
+    response = requests.get(url, stream=True)
+    with open('img.jpg', 'wb') as out_file:
+      shutil.copyfileobj(response.raw, out_file)
+      del response
+    # filename = urllib.urlopen('https://kotofoto.ru/UserFiles/Image/category/3100/138527_vinilovaya_plastinka_joy_division_unknown_pleasuresm.jpg')
+    filename = 'img.jpg'
     text = "Hello!"
     
     return filename,text
