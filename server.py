@@ -22,11 +22,10 @@ def create_tweet():
   municipalities_list = []
   
   for f in the_municipalities["municipalities"]:
-    for municipalities in f["name"]:
-     for municipalities in f["province"]:
-      #for municipalities in f["type"]:
-       #for municipalities in f["population"]:
-       municipalities_list.append(municipalities)
+    #for municipalities in f["province"]:
+    #for municipalities in f["type"]:
+    #for municipalities in f["population"]:
+    municipalities_list.append(f["population"])
 
   n = random.randint(0,len(municipalities_list))
   the_municipality = municipalities_list[n]
