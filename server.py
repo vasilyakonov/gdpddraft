@@ -17,19 +17,19 @@ def create_tweet():
   """Create the text of the tweet you want to send."""
   # Replace this with your code!
   
-  bird_response = requests.get('https://botwiki.org/api/corpora/data/animals/birds_antarctica.json')
-  the_birds = bird_response.json()
-  bird_list = []
+  municipalities_response = requests.get('https://botwiki.org/api/corpora/data/geography/canadian_municipalities.json')
+  the_municipalities = municipalities_response.json()
+  municipalities_list = []
   
-  for f in the_birds["municipalities"]:
-    for bird in f["name"]:
-    for bird in f["name"]:
-    for bird in f["type"]:
-    for bird in f["population"]:
-      bird_list.append(bird)
+  for f in the_municipalities["municipalities"]:
+    for municipalities in f["name"]:
+     for municipalities in f["province"]:
+      for municipalities in f["type"]:
+       for municipalities in f["population"]:
+        municipalities_list.append(municipalities)
 
-  n = random.randint(0,len(bird_list))
-  the_bird = bird_list[n]
+  n = random.randint(0,len(municipalities_list))
+  the_municipality = municipalities_list[n]
 
   plant_response = requests.get('https://botwiki.org/api/corpora/data/plants/plants.json')
   the_plants = plant_response.json()
@@ -41,7 +41,7 @@ def create_tweet():
   m = random.randint(0,len(plant_list))
   the_plant = plant_list[m]
 
-  the_tweet = "A %s samiyam commencement %s" % (the_bird,the_plant)
+  the_tweet = "A %s samiyam commencement %s" % (the_municipality,the_plant)
   
   
   
