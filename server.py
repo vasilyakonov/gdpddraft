@@ -16,12 +16,12 @@ def tweet(file,text):
   # you should read the img directory and delete file after posting
   
 def tweet_image():
-    url = 'https://kotofoto.ru/UserFiles/Image/category/3100/138527_vinilovaya_plastinka_joy_division_unknown_pleasuresm.jpg'
-    response = requests.get(url, stream=True)
+    #url = 'https://kotofoto.ru/UserFiles/Image/category/3100/138527_vinilovaya_plastinka_joy_division_unknown_pleasuresm.jpg'
+    #response = requests.get(url, stream=True)
     # you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
-    with open('img.jpg', 'wb') as out_file:
-      shutil.copyfileobj(response.raw, out_file)
-      del response
+    #with open('img.jpg', 'wb') as out_file:
+      #shutil.copyfileobj(response.raw, out_file)
+      #del response
     filename = 'img.jpg'
     text = "Hello!"
     
