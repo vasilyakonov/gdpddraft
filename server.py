@@ -17,16 +17,19 @@ def create_tweet():
   """Create the text of the tweet you want to send."""
   # Replace this with your code!
   
-  cat_response = requests.get('https://botwiki.org/api/corpora/data/animals/cats.json)
-  the_cats = cat_response.json()
-  cat_list = []
+  bird_response = requests.get('https://botwiki.org/api/corpora/data/animals/birds_antarctica.json')
+  the_birds = bird_response.json()
+  bird_list = []
   
-  for f in the_cats['cats']:
-    #for bird in f['members']:
-      cat_list.append(p['cats'])
+  for f in the_birds["municipalities"]:
+    for bird in f["name"]:
+    for bird in f["name"]:
+    for bird in f["type"]:
+    for bird in f["population"]:
+      bird_list.append(bird)
 
-  n = random.randint(0,len(cat_list))
-  the_cat = cat_list[n]
+  n = random.randint(0,len(bird_list))
+  the_bird = bird_list[n]
 
   plant_response = requests.get('https://botwiki.org/api/corpora/data/plants/plants.json')
   the_plants = plant_response.json()
@@ -38,7 +41,7 @@ def create_tweet():
   m = random.randint(0,len(plant_list))
   the_plant = plant_list[m]
 
-  the_tweet = "A %s samiyam commence %s" % (the_cat,the_plant)
+  the_tweet = "A %s samiyam commencement %s" % (the_bird,the_plant)
   
   
   
