@@ -38,7 +38,7 @@ def create_tweet():
   m = random.randint(0,len(plant_list))
   the_plant = plant_list[m]
 
-  the_tweet = "A %s samiyam %s" % (the_bird,the_plant)
+  the_tweet = "A %s samiyam commence %s" % (the_bird,the_plant)
   
   return the_tweet
 
