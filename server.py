@@ -26,6 +26,8 @@ def tweet_image():
       
     from PIL import Image
 im = Image.new("RGB", (512, 512), "white")
+saveImage(img.
+  
   filename = 'img.jpg'
   text = "Yes!"
     
