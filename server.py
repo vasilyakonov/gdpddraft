@@ -21,34 +21,34 @@ def tweet(file,text):
   #Dropbox
   from dropbox import DropboxOAuth2Flow
 
-def get_dropbox_auth_flow(web_app_session):
-    redirect_uri = "https://my-web-server.org/dropbox-auth-finish"
-    return DropboxOAuth2Flow(APP_KEY, APP_SECRET, redirect_uri, web_app_session,"dropbox-auth-csrf-token")
+  def get_dropbox_auth_flow(web_app_session):
+      redirect_uri = "https://my-web-server.org/dropbox-auth-finish"
+      return DropboxOAuth2Flow(os.environ['A_KEY2'], os.environ['A_SECRET2'],"dropbox-auth-csrf-token")
 
 # URL handler for /dropbox-auth-start
-def dropbox_auth_start(web_app_session, request):
-    authorize_url = get_dropbox_auth_flow(web_app_session).start()
-    redirect_to(authorize_url)
+  def dropbox_auth_start(web_app_session, request):
+      authorize_url = get_dropbox_auth_flow(web_app_session).start()
+      redirect_to(authorize_url)
 
 # URL handler for /dropbox-auth-finish
-def dropbox_auth_finish(web_app_session, request):
-    try:
-        oauth_result = \
-                get_dropbox_auth_flow(web_app_session).finish(
-                    request.query_params)
-    except BadRequestException, e:
-        http_status(400)
-    except BadStateException, e:
+  def dropbox_auth_finish(web_app_session, request):
+      try:
+          oauth_result = \
+                  get_dropbox_auth_flow(web_app_session).finish(
+                      request.query_params)
+      except BadRequestException, e:
+          http_status(400)
+      except BadStateException, e:
         # Start the auth flow again.
-        redirect_to("/dropbox-auth-start")
-    except CsrfException, e:
-        http_status(403)
-    except NotApprovedException, e:
-        flash('Not approved?  Why not?')
-        return redirect_to("/home")
-    except ProviderException, e:
-        logger.log("Auth error: %s" % (e,))
-        http_status(403)
+          redirect_to("/dropbox-auth-start")
+      except CsrfException, e:
+          http_status(403)
+      except NotApprovedException, e:
+          flash('Not approved?  Why not?')
+          return redirect_to("/home")
+      except ProviderException, e:
+          logger.log("Auth error: %s" % (e,))
+          http_status(403)
   
   # Twitter authentication
   auth = tweepy.OAuthHandler(os.environ['C_KEY'], os.environ['C_SECRET'])
@@ -62,7 +62,8 @@ def tweet_image():
     #url = 'https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2Fcool-file.json?1520108773079'
     #response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
-    dropbox.files_download_to_file("cool.json","https://www.dropbox.com/h", rev=None)
+    
+    files_download_to_file.dropbox("cool.json","https://www.dropbox.com/h", rev=None)
     with open('cool.json', 'wb') as out_file:
       shutil.copyfileobj(response.raw, out_file)
   
