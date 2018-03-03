@@ -27,15 +27,18 @@ def tweet(file,text):
   
 def tweet_image():
   
-   municipalities_response = requests.get('https://botwiki.org/api/corpora/data/geography/canadian_municipalities.json')
-      the_images = municipalities_response.json()
-      images_list = []
+    images_response = requests.get('http://my-folder/cool-file.json')
+    the_images = images_response.json()
+    images_list = []
   
-      for f in the_municipalities["municipalities"]:
-        for k, v in f.iteritems():
-          municipalities_list.append(v)
+    for f in the_images["isms"]:
+      for k, v in f.iteritems():
+        images_list.append(v)
 
-    url = 'http://kb4images.com/images/image/37490536-image.jpg'
+    n = random.randint(0,len(images_list))
+    the_image = images_list[n]
+
+    url = '%s' % (the_image)
     response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('img.jpg', 'wb') as out_file:
