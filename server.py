@@ -6,7 +6,7 @@ import tweepy
 import shutil
 import PIL
 import pip
-import WCK
+import aggdraw
 
 
 def tweet(file,text):
@@ -30,10 +30,12 @@ def tweet_image():
 
       im = Image.open("img.jpg")
 
-      draw = ImageDraw.Draw(im)
-      draw.rectangle((0, 0) + im.size, fill=128, 200)
-      draw.line((0, im.size[1], im.size[0], 0), fill=(128, 128, 128))
-      del draw
+      d = aggdraw.Draw(im)
+      p = aggdraw.Pen("black", 100)
+      d.rectangle((0, 0, 500, 500), p)
+      d.rectangle((0, 500, 500, 0), p)
+      d.flush()
+      del d
 
 # write to stdout
       im.save('img.jpg')
