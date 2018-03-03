@@ -2,3 +2,4 @@ tweepy
 requests
 pillow
 pip
+aggdraw

@@ -6,6 +6,7 @@ import tweepy
 import shutil
 import PIL
 import pip
+import WCK
 
 
 def tweet(file,text):
@@ -30,8 +31,8 @@ def tweet_image():
       im = Image.open("img.jpg")
 
       draw = ImageDraw.Draw(im)
-      draw.line((0, 0) + im.size, fill=128)
-      draw.line((0, im.size[1], im.size[0], 0), fill=(1, 1, 1))
+      draw.rectangle((0, 0) + im.size, fill=128, 200)
+      draw.line((0, im.size[1], im.size[0], 0), fill=(128, 128, 128))
       del draw
 
 # write to stdout
