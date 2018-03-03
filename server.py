@@ -27,7 +27,7 @@ def tweet(file,text):
   
 def tweet_image():
   
-    images_response = requests.get('http://my-folder/cool-file.json')
+    images_response = requests.get('https://botwiki.org/corpora-api/')
     the_images = images_response.json()
     images_list = []
   
