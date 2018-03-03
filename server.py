@@ -32,13 +32,14 @@ def tweet_image():
 
       d = aggdraw.Draw(im)
       p = aggdraw.Pen("black", 100)
-      d.rectangle((0, 0, 500, 500), p)
-      d.rectangle((0, 500, 500, 0), p)
+      b = aggdraw.Brush("white")
+      d.ellipse((0, 0, 500, 500), p, b)
+      d.ellipse((0, 500, 500, 0), p, b)
       d.flush()
       del d
 
 # write to stdout
-      im.save('img.jpg')
+      im.save('/app/img.jpg')
       del response
     filename = 'img.jpg'
     text = "no!"
