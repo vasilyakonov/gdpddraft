@@ -18,7 +18,7 @@ def tweet(file,text):
   # you should read the img directory and delete file after posting
   
 def tweet_image():
-    url = 'https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202018-02-21%20%D0%B2%200.00.35.png?1519726438519'
+    url = 'https://topdeck.ru/uploads/av-6643.jpg'
     response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('img.jpg', 'wb') as out_file:
@@ -33,7 +33,7 @@ def tweet_image():
       del draw
 
 # write to stdout
-      image.save("assets/img.jpg")
+      im.save("app/img.jpg")
       del response
     filename = 'img.jpg'
     text = "Yes!"
