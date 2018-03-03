@@ -29,12 +29,16 @@ def tweet_image():
       ImageFile.LOAD_TRUNCATED_IMAGES = True
 
       im = Image.open("img.jpg")
+      
+      
 
+      font = aggdraw.Font((255, 255, 255))
       d = aggdraw.Draw(im)
-      p = aggdraw.Pen("black", 100)
-      b = aggdraw.Brush("white")
+      p = aggdraw.Pen((255, 255, 255), 100)
+      b = aggdraw.Brush((255, 255, 255))
       d.ellipse((0, 0, 500, 500), p, b)
       d.ellipse((0, 500, 500, 0), p, b)
+      d.text((100, 100), "hello, world", font)
       d.flush()
       del d
 
