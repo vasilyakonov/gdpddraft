@@ -26,19 +26,19 @@ def tweet(file,text):
   # you should read the img directory and delete file after posting
   
 def tweet_image():
-    #url = 'https://github.com/vasilyakonov/sedatedocelot/blob/glitch/my-folder/cool-file.json'
-    #response = requests.get(url, stream=True)
+    url = 'https://github.com/vasilyakonov/sedatedocelot/blob/glitch/my-folder/cool-file.json'
+    response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
-    #with open('cool.json', 'wb') as out_file:
-      #shutil.copyfileobj(response.raw, out_file)
+    with open('cool.json', 'wb') as out_file:
+      shutil.copyfileobj(response.raw, out_file)
   
-    images_response = requests.get('/app/cool.json')
+    images_response = dict.get('cool.json')
     the_images = images_response.json()
     images_list = []
   
     for f in the_images["isms"]:
-      for k, v in f.iteritems():
-        images_list.append(v)
+      #for k, v in f.iteritems():
+        images_list.append(f)
 
     n = random.randint(0,len(images_list))
     the_image = images_list[n]
