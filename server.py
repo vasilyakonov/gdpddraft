@@ -4,7 +4,7 @@ import requests
 import os
 import tweepy
 import shutil
-import pil
+import pillow
 
 def tweet(file,text):
   """Send out the text as a tweet."""
@@ -26,8 +26,8 @@ def tweet_image():
       
     from PIL import Image
 im = Image.new("RGB", (512, 512), "white")
-    filename = 'img.jpg'
-    text = "Yes!"
+  filename = 'img.jpg'
+  text = "Yes!"
     
     return filename,text
 
