@@ -17,7 +17,7 @@ def tweet(file,text):
   # you should read the img directory and delete file after posting
   
 def tweet_image():
-    url = 'https://is2-ssl.mzstatic.com/image/thumb/Purple118/v4/7d/5a/a0/7d5aa0d4-5b31-1f54-65cf-aa6588984c96/pr_source.jpg/200x0w.jpg'
+    url = 'https://en.dailypakistan.com.pk/wp-content/uploads/2017/03/xnaveedahmad-150x150.jpg.pagespeed.ic.4zh4HlUFn-.jpg'
     response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('img.jpg', 'wb') as out_file:
