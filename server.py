@@ -5,6 +5,7 @@ import os
 import tweepy
 import shutil
 import PIL
+import pip
 
 
 def tweet(file,text):
@@ -18,7 +19,7 @@ def tweet(file,text):
   # you should read the img directory and delete file after posting
   
 def tweet_image():
-    url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqm0LITgepLdj5PRO4KjNrXszCXb22pPBYw-yWYeG0Qz4vzd2MLw'
+    url = 'http://qnimate.com/wp-content/uploads/2014/03/images2.jpg'
     response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('img.jpg', 'wb') as out_file:
@@ -37,7 +38,7 @@ def tweet_image():
       im.save('img.jpg')
       del response
     filename = 'img.jpg'
-    text = "Yes!"
+    text = "no!"
     
     return filename,text
 
