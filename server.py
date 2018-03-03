@@ -31,13 +31,24 @@ def tweet_image():
       im = Image.open("img.jpg")
       
       
+      
+      
+      url = 'https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2FArchivo-Regular.ttf?1520096937377'
+    response = requests.get(url, stream=True)
+     #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
+    with open('font.ttf', 'wb') as out_file:
+      shutil.copyfileobj(response.raw, out_file)
+      
+      
+      
+      
 
-      font = aggdraw.Font((255, 255, 255))
+      font = aggdraw.Font((255, 255, 255), "/app/font.ttf")
       d = aggdraw.Draw(im)
       p = aggdraw.Pen((255, 255, 255), 100)
       b = aggdraw.Brush((255, 255, 255))
-      d.ellipse((0, 0, 500, 500), p, b)
-      d.ellipse((0, 500, 500, 0), p, b)
+      #d.ellipse((0, 0, 500, 500), p, b)
+      #d.ellipse((0, 500, 500, 0), p, b)
       d.text((100, 100), "hello, world", font)
       d.flush()
       del d
