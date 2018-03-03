@@ -18,12 +18,13 @@ def tweet(file,text):
   # you should read the img directory and delete file after posting
   
 def tweet_image():
-    url = 'https://topdeck.ru/uploads/av-6643.jpg'
+    url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqm0LITgepLdj5PRO4KjNrXszCXb22pPBYw-yWYeG0Qz4vzd2MLw'
     response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('img.jpg', 'wb') as out_file:
       shutil.copyfileobj(response.raw, out_file)
-      from PIL import Image, ImageDraw
+      from PIL import Image, ImageDraw, ImageFile
+      ImageFile.LOAD_TRUNCATED_IMAGES = True
 
       im = Image.open("img.jpg")
 
@@ -33,7 +34,7 @@ def tweet_image():
       del draw
 
 # write to stdout
-      im.save("app/img.jpg")
+      im.save('img.jpg')
       del response
     filename = 'img.jpg'
     text = "Yes!"
