@@ -26,7 +26,7 @@ def tweet(file,text):
   # you should read the img directory and delete file after posting
   
 def tweet_image():
-    url = 'http://qnimate.com/wp-content/uploads/2014/03/images2.jpg'
+    url = 'http://kb4images.com/images/image/37490536-image.jpg'
     response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('img.jpg', 'wb') as out_file:
@@ -39,8 +39,8 @@ def tweet_image():
       
       
       
-      url = 'https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2FArchivo-Regular.ttf?1520096937377'
-    response = requests.get(url, stream=True)
+      url2 = 'https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2FArchivo-Regular.ttf?1520096937377'
+    response = requests.get(url2, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('font.ttf', 'wb') as out_file:
       shutil.copyfileobj(response.raw, out_file)
@@ -78,7 +78,7 @@ def tweet_image():
       b = aggdraw.Brush((255, 255, 255))
       #d.ellipse((0, 0, 500, 500), p, b)
       #d.ellipse((0, 500, 500, 0), p, b)
-      d.text((100, 100), "hello %s , world %s " % (the_municipality,the_plant), font)
+      d.text((100, 100), "suck on my %s , you %s " % (the_municipality,the_plant), font)
       d.flush()
       del d
 
