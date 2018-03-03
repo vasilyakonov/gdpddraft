@@ -7,6 +7,12 @@ import shutil
 import PIL
 import pip
 import aggdraw
+import urllib
+import json
+import random
+
+
+
 
 
 def tweet(file,text):
@@ -39,6 +45,29 @@ def tweet_image():
     with open('font.ttf', 'wb') as out_file:
       shutil.copyfileobj(response.raw, out_file)
       
+      municipalities_response = requests.get('https://botwiki.org/api/corpora/data/geography/canadian_municipalities.json')
+      the_municipalities = municipalities_response.json()
+      municipalities_list = []
+  
+      for f in the_municipalities["municipalities"]:
+        for k, v in f.iteritems():
+          municipalities_list.append(v)
+
+      n = random.randint(0,len(municipalities_list))
+      the_municipality = municipalities_list[n]
+
+      plant_response = requests.get('https://botwiki.org/api/corpora/data/plants/plants.json')
+      the_plants = plant_response.json()
+      plant_list = []
+
+      for p in the_plants['instruments']:
+        plant_list.append(p['name'])
+
+      m = random.randint(0,len(plant_list))
+      the_plant = plant_list[m]
+
+  #the_tweet = "A %s samiyam %s commencement %s" % (the_municipality,the_plant)
+      
       
       
       
@@ -49,7 +78,7 @@ def tweet_image():
       b = aggdraw.Brush((255, 255, 255))
       #d.ellipse((0, 0, 500, 500), p, b)
       #d.ellipse((0, 500, 500, 0), p, b)
-      d.text((100, 100), "hello, world", font)
+      d.text((100, 100), "hello %s , world %s " % (the_municipality,the_plant), font)
       d.flush()
       del d
 
