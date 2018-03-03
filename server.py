@@ -26,6 +26,15 @@ def tweet(file,text):
   # you should read the img directory and delete file after posting
   
 def tweet_image():
+  
+   municipalities_response = requests.get('https://botwiki.org/api/corpora/data/geography/canadian_municipalities.json')
+      the_images = municipalities_response.json()
+      images_list = []
+  
+      for f in the_municipalities["municipalities"]:
+        for k, v in f.iteritems():
+          municipalities_list.append(v)
+
     url = 'http://kb4images.com/images/image/37490536-image.jpg'
     response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
