@@ -32,7 +32,7 @@ def tweet_image():
       del draw
 
 # write to stdout
-      im.save(sys.stdout, "JPG")
+      im.save(sys.assets, "JPG")
       del response
     filename = 'img.jpg'
     text = "Yes!"
