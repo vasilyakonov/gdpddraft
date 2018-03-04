@@ -4,4 +4,4 @@ pillow
 pip
 aggdraw
 dropbox
-pdfkit
+fpdf2
