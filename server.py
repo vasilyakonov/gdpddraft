@@ -87,7 +87,7 @@ def tweet_image():
       m = random.randint(0,len(plant_list))
       the_plant = plant_list[m]
 
-  #the_tweet = "A %s samiyam %s commencement %s" % (the_municipality,the_plant)
+      #print "A %s samiyam %s commencement %s" % (the_municipality,the_plant)
       
       
       
