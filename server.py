@@ -107,7 +107,7 @@ def tweet_image():
       im.save('/app/img.jpg')
       del response
     filename = 'img.jpg'
-    text = "Yes!"
+    text = "no!"
     
     return filename,text
 
