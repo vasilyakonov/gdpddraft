@@ -17,37 +17,16 @@ import dropbox
 
 
 def tweet(file,text):
-  
-
-  
   # Twitter authentication
   auth = tweepy.OAuthHandler(os.environ['C_KEY'], os.environ['C_SECRET'])
   auth.set_access_token(os.environ['A_TOKEN'], os.environ['A_TOKEN_SECRET'])
   api = tweepy.API(auth)
 
   api.update_with_media(file,text)
-  # you should read the img directory and delete file after posting
   
+  '''Here is the Part That uses PIL'''
 def tweet_image():
-   
-    dbx = dropbox.Dropbox(os.environ['A_TOKEN2'])
-    dbx.users_get_current_account()
-    dbx.files_download_to_file('/app/cool.json', '/Cavs vs Warriors/Game 5/cool-file.json')
-  
-    
-    images_response = open('cool.json').read()
-    the_images = json.loads(images_response)
-    images_list = []
-
-  
-    for f in the_images["isms"]:
-      #for k, v in f.iteritems():
-        images_list.append(f)
-
-    n = random.randint(0,len(images_list))
-    the_image = images_list[n]
-
-    url = '%s' % (the_image)
+  url = 'your image url'
     response = requests.get(url, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('img.jpg', 'wb') as out_file:
@@ -60,11 +39,13 @@ def tweet_image():
       
       
       
-      url2 = 'https://cdn.glitch.com/c8f6cb80-020b-4743-b6ab-6e2bd79b5782%2FArchivo-Regular.ttf?1520096937377'
+      url2 = 'your font url'
     response = requests.get(url2, stream=True)
      #you shold be able to specify a path, check glitch support for writing to ASSETS or to .tmp folder
     with open('font.ttf', 'wb') as out_file:
       shutil.copyfileobj(response.raw, out_file)
+      
+      '''Something to Post'''
       
       municipalities_response = requests.get('https://botwiki.org/api/corpora/data/geography/canadian_municipalities.json')
       the_municipalities = municipalities_response.json()
@@ -87,12 +68,7 @@ def tweet_image():
       m = random.randint(0,len(plant_list))
       the_plant = plant_list[m]
 
-      #print "A %s samiyam %s commencement %s" % (the_municipality,the_plant)
-      
-      
-      
-      
-
+      '''Here is the Part That Uses Aggdraw'''
       font = aggdraw.Font((255, 255, 255), "/app/font.ttf")
       d = aggdraw.Draw(im)
       p = aggdraw.Pen((255, 255, 255), 100)
@@ -102,12 +78,10 @@ def tweet_image():
       d.text((100, 100), "suck on my %s , you %s " % (the_municipality,the_plant), font)
       d.flush()
       del d
-
-# write to stdout
       im.save('/app/img.jpg')
       del response
     filename = 'img.jpg'
-    text = "no!"
+    text = "Yes!"
     
     return filename,text
 
