@@ -15,7 +15,7 @@ import dropbox
 
 
 
-
+#This is the part that sets up your twitter preferences
 def tweet(file,text):
   # Twitter authentication
   auth = tweepy.OAuthHandler(os.environ['C_KEY'], os.environ['C_SECRET'])
@@ -24,7 +24,7 @@ def tweet(file,text):
 
   api.update_with_media(file,text)
   
-  '''Here is the Part That uses PIL'''
+#This the part that GETS the image
 def tweet_image():
   url = 'your image url'
     response = requests.get(url, stream=True)
