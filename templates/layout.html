@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Flask app</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-  </head>
+
    
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">Suck</h1>
+        <h1 class="logo"></h1>
         <strong><nav>
           <ul class="menu">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <form action="{{ url_for('about') }}">
-    <input type="submit" value="This is a button link">
+           
+                        <form action="{{ url_for('home') }}">
+    <input type="submit" value="Home">
 </form>
- 
-            <li><a href="{{ url_for('about') }}">About</a></li>
+            <form action="{{ url_for('about') }}">
+    <input type="submit" value="About">
+</form>
           </ul>
         </nav></strong>
       </div>
