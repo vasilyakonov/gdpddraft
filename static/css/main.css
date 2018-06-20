@@ -1,7 +1,7 @@
 img {
     position: static;
-    left: 100px;
-    top: 0px;
+    left: 0px;
+    top: 90px;
     z-index: 1;
 }
 embed {
@@ -10,9 +10,9 @@ embed {
       top: 0px;
       z-index: -1;
 }
-header {
-      position: relative;
-      left: -400px;
-      top: -206px;
+div {
+      position: absolute;
+      left: 0px;
+      top: 360px;
       z-index: 1;
 }
