@@ -1,6 +1,6 @@
 img {
-    position: absolute;
-    left: 0px;
+    position: static;
+    left: 100px;
     top: 0px;
     z-index: 1;
 }
@@ -10,9 +10,9 @@ embed {
       top: 0px;
       z-index: -1;
 }
-input {
-      position: absolute;
-      left: 0px;
+header {
+      position: relative;
+      left: -400px;
       top: -206px;
       z-index: 1;
 }
