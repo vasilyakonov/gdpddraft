@@ -1,11 +1,11 @@
-form {
-      position: absolute;
+div.home {
+      position: static;
       left: 0px;
       top: 340px;
       z-index: 1;
 }
 img {
-    position: absolute;
+    position: static;
     left: 45px;
     top: 0px;
     z-index: 1;
