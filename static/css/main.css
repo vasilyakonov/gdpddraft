@@ -1,11 +1,11 @@
 img {
-    position: static;
+    position: absolute;
     left: 0px;
-    top: 90px;
+    top: 0px;
     z-index: 1;
 }
 embed {
-      position:absolute;
+      position: absolute;
       left: 0px;
       top: 0px;
       z-index: -1;
@@ -13,6 +13,6 @@ embed {
 div {
       position: absolute;
       left: 0px;
-      top: 360px;
+      top: 0px;
       z-index: 1;
 }
