@@ -1,5 +1,4 @@
 tweepy
 requests
 flask
-pyjade
-jinja
+bs4
