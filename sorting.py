@@ -1,9 +1,12 @@
 import bs4
 
+from bs4 import BeautifulSoup 
+
 # load the file
-with open("./templates/about.html") as inf:
+with open(".test.html") as inf:
     txt = inf.read()
-    soup = bs4.BeautifulSoup(txt)
+    soup = bs4.BeautifulSoup(txt, features="html.parser")
+    print(soup.prettify())
 
 # create new link
 new_link = soup.new_tag("link", rel="icon", type="image/png", href="img/tor.png")

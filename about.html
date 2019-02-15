@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 
 <html>
-<body>
 <head>
-    
-  Twenty two<link href="img/tor.png" rel="icon" type="image/png"/></head>
-  {% extends "layout.html" %}
-{% block content %}
-   <div class="about" style="z-index:1;">
+<title>Flask app</title>
+<link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"/>
+<link href="img/tor.png" rel="icon" type="image/png"/></head>
+<body>
+<header>
+<div class="container">
+<nav>
+<ul class="menu">
+<form action="{{ url_for('home') }}">
+<a href="https://bright-art.glitch.me/"><img alt="Smiley face" height="618" src="https://cdn.glitch.com/731b2b86-97c7-4581-83c3-cb37cd854060%2F%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-1.png?1529525958476" style="margin:0px;" width="270"/></a>
+</form>
+<form action="{{ url_for('about') }}">
+<input style="margin:12px;float:right;text-decoration:none;z-index:1;top:0px;" type="submit" value="About"/>
+</form>
+</ul>
+</nav>
 </div>
- {% endblock %}
+</header>
+<div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
 </body>
 </html>
