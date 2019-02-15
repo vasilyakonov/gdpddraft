@@ -1,7 +1,7 @@
 import bs4
 
 # load the file
-with open("about.html") as inf:
+with open("./templates/about.html") as inf:
     txt = inf.read()
     soup = bs4.BeautifulSoup(txt)
 
@@ -13,4 +13,4 @@ soup.head.append(new_link)
 # save the file again
 with open("about.html", "w") as outf:
     outf.write(str(soup))
-    print(outf.write(str(soup)))
+    
