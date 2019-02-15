@@ -1,4 +1,8 @@
+# -*- coding: utf-8 -*-
 import bs4
+import shutil
+import os
+
 
 from bs4 import BeautifulSoup 
 
@@ -17,4 +21,5 @@ soup.head.append(new_link)
 with open("./templates/about.html", "w") as outf:
     outf.write(str(soup))
     print(soup.prettify())
+
     
