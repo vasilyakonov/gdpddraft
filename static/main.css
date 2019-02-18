@@ -36,7 +36,7 @@ body {
 
 
 @media (min-width: 600px) {
-  .container {
+  body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto 1fr auto;
@@ -47,69 +47,23 @@ body {
 }
 
 
-header {
-  grid-column: span 4;
-  padding:30px;
-  text-align: center;
-  font-family: Zapfino, sans-serif ;
-  font-weight:bold;
 
-  
-  font-size: 4vw;
-  color: yellow;
-  background-color: #ffff;
-}
-h2 {
-  font-family: Baskerville;
-  font-weight:bold;
- /* padding: 10px;*/
-  text-align: left;
- /* margin-left: 15vw;*/
 
-  color:black;
-  margin-bottom:10px;
-  
-  
-  background-color: #ffff;}
 
-.object1 {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  background-color: #ffff;
-  padding: 15px;
-  
-}
-
-.object2 {
-  grid-column: span 1;
-  flex: 1;
-  background-color: #ffff;
-  padding: 15px;
-  
-}
- 
-.object3 {
-  grid-column: span 2;
-  flex: 1;
-  padding: 15px;
-  background-color: #ffff;
-}
 div {
   color:Black;
   padding: 15px;
-  
-}
-footer {
   font-family:CMU Typewriter Text;
   Font-style:italic;
-  grid-column: span 2;
+  grid-column: span 3;
   padding: 30px;
   text-align: left;
   margin-left: 10vw;
   margin-right:10vw;
   background-color: white;
   color: black;
+  
+}
 }
 
 h1 {
@@ -123,4 +77,3 @@ img {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   padding: 10px;
   }
-}

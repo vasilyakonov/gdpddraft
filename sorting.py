@@ -41,7 +41,7 @@ for f in the_entries:
    entries_list.append(f)
 print len(entries_list)
 
-markup = '%s' % (random.choice(tuple(entries_list)))
+
 
 # load the file
 with open("./templates/index.html") as inf:
@@ -53,7 +53,21 @@ with open("./templates/index.html") as inf:
 new_link = soup.new_tag("link", rel="icon", type="image/png", href="img/tor.png")
 # insert it into the document
 soup.body.string =""
-soup.body.append(markup)
+
+object1 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.body.append(object1)
+entries_list.remove(object1)
+
+object2 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.body.append(object2)
+entries_list.remove(object2)
+
+object3 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.body.append(object3)
+entries_list.remove(object3)
 
 # save the file again
 with open("./templates/index.html", "w") as outf:
