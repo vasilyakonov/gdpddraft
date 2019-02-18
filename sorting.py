@@ -41,6 +41,7 @@ with open("./templates/index.html") as inf:
 # create new link
 new_link = soup.new_tag("link", rel="icon", type="image/png", href="img/tor.png")
 # insert it into the document
+soup.body.string =""
 soup.body.append(markup)
 
 # save the file again
