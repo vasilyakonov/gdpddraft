@@ -11,6 +11,10 @@ body {
     display: flex;
   flex-direction: column;
   min-height: 10vh;
+   background: url(https://hdwallsource.com/img/2016/8/blue-and-red-gradient-wallpaper-58835-60612-hd-wallpapers.jpg);
+  height: 1000%;
+  position: fixed;
+  background-size: cover;
 }
 div {
   color:Black;
@@ -23,6 +27,7 @@ div {
   height: 100%;*/
   color: #000; /* Fallback for older browsers */
   color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
  
   
 }
@@ -31,8 +36,12 @@ div {
 @media (min-width: 600px) {
   body {
     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-columns: 1fr 1fr;
      grid-template-rows: auto 1fr auto;
+      background: url(https://hdwallsource.com/img/2016/8/blue-and-red-gradient-wallpaper-58835-60612-hd-wallpapers.jpg);
+  height: 1000%;
+  position: fixed;
+  background-size: cover;
   }
 
 
@@ -43,11 +52,12 @@ div {
   color:Black;
   Font-style:italic;
   grid-column: span 1;
-  padding: 15px;
+  padding: 30px;
   text-align: left;
   margin-left: 10px;
   margin-right:10px;
-  background-color: white;
+  background-color: transparent;
+  height: 60vh;
  
   
 }
