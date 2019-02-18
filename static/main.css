@@ -3,6 +3,8 @@
 font-family: "Standard";
 src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard-Book.otf?1548162349690");
 }
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,10 +13,8 @@ body {
     display: flex;
   flex-direction: column;
   min-height: 10vh;
-   background: url(https://hdwallsource.com/img/2016/8/blue-and-red-gradient-wallpaper-58835-60612-hd-wallpapers.jpg);
-  height: 1000%;
-  position: fixed;
-  background-size: cover;
+  
+   
 }
 div {
   color:Black;
@@ -38,10 +38,10 @@ div {
     display: grid;
      grid-template-columns: 1fr 1fr;
      grid-template-rows: auto 1fr auto;
-      background: url(https://hdwallsource.com/img/2016/8/blue-and-red-gradient-wallpaper-58835-60612-hd-wallpapers.jpg);
+      /*background: url(https://hdwallsource.com/img/2016/8/blue-and-red-gradient-wallpaper-58835-60612-hd-wallpapers.jpg);
   height: 1000%;
   position: fixed;
-  background-size: cover;
+  background-size: cover;*/
   }
 
 
