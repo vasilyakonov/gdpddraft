@@ -2,6 +2,7 @@
 import bs4
 import shutil
 import os
+import subprocess
 
 
 from bs4 import BeautifulSoup 
@@ -22,4 +23,4 @@ with open("./templates/index.html", "w") as outf:
     outf.write(str(soup))
     print(soup.prettify())
 
-    
+subprocess.call("refresh")    
