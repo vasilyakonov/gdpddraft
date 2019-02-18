@@ -1,1 +1,115 @@
 
+@font-face {
+font-family: "Standard";
+src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard-Book.otf?1548162349690");
+}
+body {
+  font-family: "Standard";
+  line-height: 136%
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 10vh;
+}
+
+.hide {
+  display: none;
+}
+
+.double {
+  font-family:CMU Typewriter Text;
+  Font-style:italic;
+  grid-column: span 3;
+  padding: 30px;
+  text-align: left;
+  margin-left: 10vw;
+  margin-right:10vw;
+  background-color: white;
+  color: black;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+
+  }
+  .hide {
+  display: grid;
+}
+}
+
+header {
+  grid-column: span 4;
+  padding:30px;
+  text-align: center;
+  font-family: Zapfino, sans-serif ;
+  font-weight:bold;
+
+  
+  font-size: 4vw;
+  color: yellow;
+  background-color: #ffff;
+}
+h2 {
+  font-family: Baskerville;
+  font-weight:bold;
+ /* padding: 10px;*/
+  text-align: left;
+ /* margin-left: 15vw;*/
+
+  color:black;
+  margin-bottom:10px;
+  
+  
+  background-color: #ffff;}
+
+main {
+  flex: 1;
+  padding: 15px;
+}
+
+nav {
+  background-color: #ffff;
+  padding: 15px;
+  
+}
+ 
+aside {
+  padding: 15px;
+  background-color: #ffff;
+}
+div {
+  color:Black;
+  padding: 15px;
+  
+}
+footer {
+  font-family:CMU Typewriter Text;
+  Font-style:italic;
+  grid-column: span 2;
+  padding: 30px;
+  text-align: left;
+  margin-left: 10vw;
+  margin-right:10vw;
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  margin-bottom:10px;
+  font-weight: bold;
+  font-family:Grotesque MT;
+}
+img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 10px;
+  }
