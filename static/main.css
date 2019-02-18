@@ -12,27 +12,6 @@ body {
   flex-direction: column;
   min-height: 10vh;
 }
-
-
-
-
-
-.hide {
-  display: none;
-}
-
-.double {
-  font-family:CMU Typewriter Text;
-  Font-style:italic;
-  grid-column: span 3;
-  padding: 30px;
-  text-align: left;
-  margin-left: 10vw;
-  margin-right:10vw;
-  background-color: white;
-  color: black;
-}
-
 div {
   color:Black;
   grid-column: span 1;
@@ -40,7 +19,10 @@ div {
   text-align: left;
   margin-left: 10vw;
   margin-right:10vw;
-  background-color: white;
+  /*background:url(https://hdwallsource.com/img/2016/8/blue-and-red-gradient-wallpaper-58835-60612-hd-wallpapers.jpg);
+  height: 100%;*/
+  color: #000; /* Fallback for older browsers */
+  color: rgba(0, 0, 0, 0.5);
  
   
 }
@@ -52,9 +34,6 @@ div {
      grid-template-columns: 1fr 1fr 1fr 1fr;
      grid-template-rows: auto 1fr auto;
   }
-  .hide {
-  display: grid;
-}
 
 
 
