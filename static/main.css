@@ -70,18 +70,24 @@ h2 {
   
   background-color: #ffff;}
 
-main {
+.object1 {
   flex: 1;
+  background-color: #ffff;
   padding: 15px;
+  
 }
 
-nav {
+.object2 {
+  grid-column: span 2;
+  flex: 1;
   background-color: #ffff;
   padding: 15px;
   
 }
  
-aside {
+.object3 {
+  grid-column: span 2;
+  flex: 1;
   padding: 15px;
   background-color: #ffff;
 }

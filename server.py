@@ -29,12 +29,6 @@ with open("./templates/index.html", "w") as outf:
     outf.write(str(soup))
     print(soup.prettify())
 
-
-
-
-
-
-
 from flask import Flask
 
 from flask import Flask, render_template
@@ -46,6 +40,8 @@ def index():
   
 if __name__ == '__main__':
     app.run(debug=False)
+    
+    
     
 
 
