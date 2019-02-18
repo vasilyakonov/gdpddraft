@@ -35,7 +35,7 @@ body {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1500px) {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
