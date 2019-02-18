@@ -2,26 +2,11 @@
 <html>
   <head>
     <title>Flask app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   </head>
-   
   <body>
-    <header>
-      <div class="container" >
-        <nav>
-          <ul class="menu">
-            
-           
-                        <form action="{{ url_for('home') }}">
-    <a href="https://bright-art.glitch.me/"><img src="https://cdn.glitch.com/731b2b86-97c7-4581-83c3-cb37cd854060%2F%D0%91%D0%B5%D0%B7%D1%8B%D0%BC%D1%8F%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-1.png?1529525958476" alt="Smiley face" height="618" width="270" style="margin:0px;" /></a>
-</form>
-            <form action="{{ url_for('index') }}">
-    <input type="submit" value="About" style="margin:12px;float:right;text-decoration:none;z-index:1;top:0px;">
-</form>
-          </ul>
-        </nav>
-      </div>
-    </header>
+   
       <div class="container">
       {% block content %}
       {% endblock %}
