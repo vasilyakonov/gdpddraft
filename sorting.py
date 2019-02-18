@@ -69,6 +69,31 @@ object3 = '%s' % (random.choice(tuple(entries_list)))
 soup.body.append(object3)
 entries_list.remove(object3)
 
+object4 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.body.append(object4)
+entries_list.remove(object4)
+
+object5 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.body.append(object5)
+entries_list.remove(object5)
+
+object6 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.body.append(object6)
+entries_list.remove(object6)
+
+object7 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.body.append(object7)
+entries_list.remove(object7)
+
+object8 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.body.append(object8)
+entries_list.remove(object8)
+
 # save the file again
 with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
