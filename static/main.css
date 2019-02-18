@@ -13,22 +13,25 @@ body {
     display: flex;
   flex-direction: column;
   min-height: 10vh;
-  background-image: linear-gradient(red, yellow);
+  background-image: linear-gradient(blue, orange);
   
    
 }
 div {
-  color:Black;
-  grid-column: span 1;
-  padding: 15px;
+  background-color: #fff;
+  
+  color: #000;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: Standard;
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
   text-align: left;
-  margin-left: 10vw;
-  margin-right:10vw;
-  /*background:url(https://hdwallsource.com/img/2016/8/blue-and-red-gradient-wallpaper-58835-60612-hd-wallpapers.jpg);
-  height: 100%;*/
-  color: #000; /* Fallback for older browsers */
-  color: rgba(0, 0, 0, 0.5);
-  background-color: transparent;
+  margin-left: 10px;
+  margin-right:10px;
+  height: 60vh;
  
   
 }
