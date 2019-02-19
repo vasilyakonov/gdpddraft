@@ -110,13 +110,15 @@ with open("./templates/index.html", "w") as outf:
 from flask import Flask
 
 from flask import Flask, render_template
+
 app = Flask(__name__)
 
 @app.route('/')
 def index():
      return render_template('index.html')
+  
 @app.route('/calendar/')
-def index():
+def static_page(calendar):
      return render_template('calendar.html')
   
   
