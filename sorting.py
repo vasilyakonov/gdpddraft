@@ -42,7 +42,6 @@ for f in the_entries:
 print len(entries_list)
 
 
-
 # load the file
 with open("./templates/index.html") as inf:
     txt = inf.read()
