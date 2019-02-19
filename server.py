@@ -106,7 +106,6 @@ with open("./templates/index.html", "w") as outf:
 
 
 
-
 from flask import Flask
 
 from flask import Flask, render_template
