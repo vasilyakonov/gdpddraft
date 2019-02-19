@@ -117,10 +117,9 @@ app = Flask(__name__)
 def index():
      return render_template('index.html')
   
-@app.route('/calendar/')
-def static_page(calendar):
+@app.route('/calendar')
+def calendar(calendar):
      return render_template('calendar.html')
-  
   
   
 if __name__ == '__main__':
