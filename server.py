@@ -97,9 +97,6 @@ soup.main.append(object8)
 entries_list.remove(object8)
 
 
-
-
-
 # save the file again
 with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
@@ -121,6 +118,7 @@ def calendar():
 
 if __name__ == '__main__':
     app.run(debug=False)
+    
     
     
 subprocess.call("refresh") 

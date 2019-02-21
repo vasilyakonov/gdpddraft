@@ -18,7 +18,7 @@ nav {
   mix-blend-mode: screen;
   border-radius: initial;
   display: grid;
-  column-width: 2fr;
+  column-width: 1fr;
 }
 
 h2 {
