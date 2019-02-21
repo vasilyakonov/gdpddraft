@@ -6,6 +6,7 @@ import subprocess
 import json
 import random
 
+
 from bs4 import BeautifulSoup 
 
 """markup = <div class="object_one"> <h1>Journal For Raw Visual Data</h1> 
