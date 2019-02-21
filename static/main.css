@@ -68,7 +68,7 @@ h1 {
   main {
     display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
-     grid-template-rows: auto 1fr auto;
+     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       
   }
 
@@ -79,6 +79,7 @@ h1 {
 div {
   display: grid;
   column-width: 1fr;
+  grid-row: span 1;
     background-color: #fff;
   color: #000;
   mix-blend-mode: screen;
