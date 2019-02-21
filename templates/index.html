@@ -7,7 +7,7 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="{{ url_for('static', filename='reset.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='rewrite-main.css') }}" rel="stylesheet">
  </head>
  <body>
   <div>
@@ -20,14 +20,14 @@
    </h2>
   </nav>
   <main>
-   <div> <h1>WYSIWYG</h1> </div>
    <div> <h1>Digital Unconscious</h1> </div>
-   <div> <a href='{{ url_for('calendar') }}'> <img src='https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FIMG_7690.JPG?1550555597109' alt='calendar'></a>  </div>
-   <div> <h1>Art & Design Digest</h1> </div>
    <div> <h1>Lugemik Posters/Book</h1> </div>
    <div> <h1>About</h1> </div>
-   <div> <h1>Typefaces</h1> </div>
    <div> <h1>Imposter</h1> </div>
+   <div> <h1>Critical Poster</h1> </div>
+   <div> <h1>Typefaces</h1> </div>
+   <div> <h1>Journal For Raw Visual Data</h1> </div>
+   <div> <a href='{{ url_for('calendar') }}'> <img src='https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FIMG_7690.JPG?1550555597109' alt='calendar'></a>  </div>
   </main>
  </body>
  {% endblock %}
