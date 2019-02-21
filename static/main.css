@@ -1,5 +1,5 @@
 
-/*@font-face {
+@font-face {
 font-family: "Standard";
 src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard-Book.otf?1548162349690");
 }
@@ -53,7 +53,7 @@ div {
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
-  height: 60vh;
+  height: 60vh;*/
  
   
 }
@@ -126,4 +126,4 @@ img {
   margin-left: 0px;
   margin-right:0px;
     
-} */
+} 
