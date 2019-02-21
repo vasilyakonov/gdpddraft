@@ -102,8 +102,7 @@ with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
 
-
-
+    
 from flask import Flask
 
 from flask import Flask, render_template
@@ -117,8 +116,7 @@ def index():
 @app.route('/calendar')
 def calendar():
      return render_template('calendar.html')
-  
-  
+
 if __name__ == '__main__':
     app.run(debug=False)
 

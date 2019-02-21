@@ -67,7 +67,7 @@ h1 {
 @media (min-width: 600px) {
   main {
     display: grid;
-     grid-template-columns: 1fr 1fr ;
+     grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: auto 1fr auto;
       
   }
@@ -91,7 +91,6 @@ div {
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
- 
  
   
 }
