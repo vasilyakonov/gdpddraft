@@ -40,10 +40,11 @@ entries_response = open('entries.json').read()
 the_entries = json.loads(entries_response)
 entries_list = []
 
-
 for f in the_entries:
    entries_list.append(f)
 print len(entries_list)
+
+
 
 # load the file
 with open("./templates/index.html") as inf:
@@ -96,11 +97,12 @@ object8 = '%s' % (random.choice(tuple(entries_list)))
 soup.main.append(object8)
 entries_list.remove(object8)
 
-
 # save the file again
 with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
+
+
 
 from flask import Flask
 
@@ -115,14 +117,12 @@ def index():
 @app.route('/calendar')
 def calendar():
      return render_template('calendar.html')
-
+  
+  
 if __name__ == '__main__':
     app.run(debug=False)
-    
-    
-    
-subprocess.call("refresh") 
 
+#subprocess.call("refresh") 
     
     
     
