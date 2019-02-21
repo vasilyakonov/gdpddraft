@@ -42,6 +42,7 @@ for f in the_entries:
 print len(entries_list)
 
 
+
 # load the file
 with open("./templates/index.html") as inf:
     txt = inf.read()
@@ -97,6 +98,5 @@ entries_list.remove(object8)
 with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
-    
 
 subprocess.call("refresh")    

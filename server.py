@@ -9,7 +9,9 @@ import bs4
 import jinja2
 import subprocess
 import json
+
 from bs4 import BeautifulSoup 
+
 
 """markup = <div class="object_one"> <h1>Journal For Raw Visual Data</h1> 
       Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.
@@ -102,6 +104,7 @@ with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
 
+   
 
 
 from flask import Flask
@@ -115,13 +118,12 @@ def index():
      return render_template('index.html')
   
 @app.route('/calendar')
-def calendar():
+def calendar(calendar):
      return render_template('calendar.html')
   
   
 if __name__ == '__main__':
     app.run(debug=False)
-    
 
 #subprocess.call("refresh") 
     
