@@ -40,6 +40,7 @@ body {
    
 }
 div {
+  grid-row: auto;
   background-color: #fff;
   display: grid;
   color: #000;
@@ -70,7 +71,7 @@ h1 {
   body {
     display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr ;
-     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-rows: auto auto auto auto auto auto auto;
       
   }
 
@@ -80,6 +81,7 @@ h1 {
 
 div {
   display: grid;
+  grid-row: auto;
   column-width: 1fr;
     background-color: #fff;
   color: #000;
