@@ -48,12 +48,12 @@ div {
   font-family: Standard;
   font-size: 12pt;
   margin: 0;
-  /*opacity: 0.9;
+  /*opacity: 0.9;*/
   padding: 30px;
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
-  height: 60vh;*/
+  height: 60vh;
  
   
 }
@@ -69,7 +69,6 @@ h1 {
     display: grid;
      grid-template-columns: 1fr 1fr ;
      grid-template-rows: auto 1fr auto;
-    z-index:-1;
       
   }
 
@@ -80,7 +79,6 @@ h1 {
 div {
   display: grid;
   column-width: 1fr;
-  grid-row: span 1;
     background-color: #fff;
   color: #000;
   mix-blend-mode: screen;
@@ -88,10 +86,12 @@ div {
   font-family: Standard;
   font-size: 12pt;
   margin: 0;
+ 
   padding: 30px;
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
+ 
  
   
 }
@@ -103,13 +103,12 @@ h1 {
   font-family:Grotesque MT;
 }
 img {
-  width: 50%;
+  width: 100%;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   padding: 10px;
   background:white;
   }
-  
   nav {
      display: grid;
   column-width: 2fr;
@@ -126,4 +125,4 @@ img {
   margin-left: 0px;
   margin-right:0px;
     
-} 
+}
