@@ -3,7 +3,7 @@
 font-family: "Standard";
 src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard-Book.otf?1548162349690");
 }
-
+.hide{display:none;}
 nav {
      display: grid;
   column-width: auto;
@@ -112,7 +112,7 @@ h1 {
   font-family:Grotesque MT;
 }
 img {
-  width: auto;
+  width: 10vh;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   padding: 10px;
