@@ -31,10 +31,8 @@ body {
   flex-direction: column;
   font-family: "Standard";
   line-height: 100%;
-    display: flex;
-  flex-direction: column;
   min-height: 10vh;
-  background-image: linear-gradient(#008FFF, orange, #FF3E00, white);
+  background-image: linear-gradient(#008FFF, white, orange, white, #FF3E00, white);
   
   
    
