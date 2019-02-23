@@ -71,8 +71,7 @@ h1 {
   main {
     display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr ;
-     grid-template-rows: auto auto auto auto auto auto auto;
-      
+     grid-template-rows: 30px 30px 30px
   }
 
 
