@@ -1,12 +1,17 @@
 # -*- coding: utf-8 -*-
-import bs4
-import shutil
+
 import os
+import requests
+import random
+import flask
+import shutil
+import bs4
+import jinja2
 import subprocess
 import json
-import random
 
 from bs4 import BeautifulSoup 
+
 
 """markup = <div class="object_one"> <h1>Journal For Raw Visual Data</h1> 
       Praesent efficitur, nibh vitae fringilla scelerisque, est neque faucibus quam, in iaculis purus libero eget mauris. Curabitur et luctus sapien, ac gravida orci. Aliquam erat volutpat. In hac habitasse platea dictumst. Aenean commodo, arcu a commodo efficitur, libero dolor mollis turpis, non posuere orci leo eget enim. Curabitur sit amet elementum orci, pulvinar dignissim urna. Morbi id ex eu ex congue laoreet. Aenean tincidunt dolor justo, semper pretium libero luctus nec. Ut vulputate metus accumsan leo imperdiet tincidunt. Phasellus nec rutrum dolor. Cras imperdiet sollicitudin arcu, id interdum nibh fermentum in.
@@ -36,6 +41,7 @@ from bs4 import BeautifulSoup
 entries_response = open('entries.json').read()
 the_entries = json.loads(entries_response)
 entries_list = []
+
 
 for f in the_entries:
    entries_list.append(f)
@@ -94,10 +100,34 @@ object8 = '%s' % (random.choice(tuple(entries_list)))
 soup.main.append(object8)
 entries_list.remove(object8)
 
+object9 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.main.append(object9)
+entries_list.remove(object9)
+
+object10 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.main.append(object10)
+entries_list.remove(object10)
+
+object11 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.main.append(object11)
+entries_list.remove(object11)
+
+object12 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.main.append(object12)
+entries_list.remove(object12)
+
+object13 = '%s' % (random.choice(tuple(entries_list)))
+
+soup.main.append(object13)
+entries_list.remove(object13)
+
+
 # save the file again
 with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
-    
 
-subprocess.call("refresh")    
