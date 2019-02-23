@@ -6,7 +6,7 @@ src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard
 
 nav {
      display: grid;
-  column-width: 2fr;
+  column-width: auto;
   background-color: #fff;
   color: #000;
   mix-blend-mode: screen;
@@ -111,7 +111,7 @@ img {
   }
   nav {
      display: grid;
-  column-width: 2fr;
+  column-width: auto;
     background-color: #fff;
   color: #000;
   mix-blend-mode: screen;
