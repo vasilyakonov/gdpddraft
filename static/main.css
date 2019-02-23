@@ -71,7 +71,7 @@ h1 {
   main {
     display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr ;
-     grid-template-rows: 30px 30px 30px
+     grid-template-rows: 1fr 1fr 1fr;
   }
 
 
@@ -89,15 +89,11 @@ div {
   font-family: Standard;
   font-size: 12pt;
   margin: 0;
- 
   padding: 30px;
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
   height:20vh;
- 
- 
-  
 }
   a{ text-decoration:none;}
 
@@ -123,10 +119,11 @@ img {
   font-family: Standard;
   font-size: 12pt;
   margin: 0;
- 
   padding: 30px;
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
     
+}
+
 }
