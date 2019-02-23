@@ -26,7 +26,9 @@ font-family:Grotesque MT;
   font-weight: bold;
 }
 i{ 
-font-family:Berthold script;}
+font-family:Berthold script;
+font-size: 14pt;
+}
 
 body {
   display: flex;
@@ -34,7 +36,7 @@ body {
   font-family: "Standard";
   line-height: 100%;
   min-height: 10vh;
-  background-image: linear-gradient(orange, white, #FF3E00, white);
+  background-image: linear-gradient(lightblue, white, orange, white, #FF3E00, white);
   
   
    
@@ -66,12 +68,19 @@ h1 {
   font-weight: bold;
   font-family:Grotesque MT;}
 
+img {
+  width: auto;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 10px;
+  background:white;
+  }
 
 @media (min-width: 600px) {
   main {
     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr ;
-     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-columns: auto auto auto auto ;
+     grid-template-rows: auto auto auto;
   }
 
 
@@ -103,7 +112,7 @@ h1 {
   font-family:Grotesque MT;
 }
 img {
-  width: 100%;
+  width: auto;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   padding: 10px;

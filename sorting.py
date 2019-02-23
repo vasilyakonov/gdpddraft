@@ -131,3 +131,4 @@ with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
 
+    
