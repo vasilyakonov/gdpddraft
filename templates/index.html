@@ -76,10 +76,29 @@ body {
  
   
 }
+      
+      .container{  border: 1px dotted black;
+  grid-row: auto;
+  background-color: #fff;
+  display: grid;
+  color: #000;
+  mix-blend-mode: normal;
+  border-radius: initial;
+  font-family: Standard;
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  position:relative;
+  isolation: isolate;}
 
 a{ text-decoration:none;}
 
 h1 {
+  
   margin-top:0px;
   font-size: 10pt;
   font-weight: bold;
@@ -150,8 +169,8 @@ left: 50%;
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
-  height:20vh;
-  position:relative;}
+  position:relative;
+  isolation: isolate;}
   
   a{ text-decoration:none;}
 
@@ -189,7 +208,6 @@ img {
 }
 #fade2{
   mix-blend-mode: normal;
-background-color: white;
   position: absolute;
 top: 50%;
 left: 50%;
@@ -210,7 +228,8 @@ left: 50%;
  </head>
     
  <body>
-   <script>$(function() {
+   <script>
+$(function() {
 $('#fade1').hover(function() { 
     $('#fade2').fadeIn(); 
 }, function() { 
