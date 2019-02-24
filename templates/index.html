@@ -96,11 +96,9 @@ img {
   transform: translate(-50%, -50%);
   }
 #fade2{
-  mix-blend-mode: luminosity;
 position: absolute;
 top: 50%;
 left: 50%;
-
   z-index: 2;
   isolation: isolate;
 }
@@ -134,6 +132,9 @@ div {
   height:50vh;
   position:relative;
 }
+  
+  .container{isolation: isolate;}
+  
   a{ text-decoration:none;}
 
 h1 {
@@ -169,8 +170,7 @@ img {
     
 }
 #fade2{
-  background: white;
-  mix-blend-mode: normal;
+background: white;
   position: absolute;
 top: 50%;
 left: 50%;
@@ -193,7 +193,7 @@ $('#fade1').hover(function() {
    </script>
   <nav>
    <h2>
-     <i>Vasily Dyakonov</i> <b>d</b> is avaliable for graphic design work
+     <i>Vasily Dyakonov</i> <b></b>is avaliable for graphic design work
    </h2>
   </nav>
   <main>
