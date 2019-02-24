@@ -264,25 +264,26 @@ left: 50%;
    <div class='a1'> <h1>WYSIWYG</h1> </div>
    <div class='a1'> <h1>Digital Unconscious</h1> </div>
   </main>
- </body>
- <p class"hide">
-  {% extends "layout.html" %}
-{% block content %}
-    {% endblock %}
- </p>
-    <script>
+      <script>
 $(function() {
-$('#fade2').hover(function() {
+$('#fade4').hover(function() {
     $('#fade1').css('mix-blend-mode', 'screen');
   }, function() {
     // on mouseout, reset the background colour
     $('#fade1').css('mix-blend-mode', 'normal');
   });
 });</script>
+ </body>
+ <p class"hide">
+  {% extends "layout.html" %}
+{% block content %}
+    {% endblock %}
+ </p>
+ 
 
    
 
-   <script>
+<!--   <script>
 $(function() {
 $('#fade1').hover(function() { 
     $('#fade2').fadeIn(); 
@@ -290,5 +291,5 @@ $('#fade1').hover(function() {
     $('#fade2').fadeOut(3000); 
 });
 });  
-   </script>
+   </script>-->
 </html>
