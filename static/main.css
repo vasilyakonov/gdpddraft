@@ -22,12 +22,12 @@ nav {
 
 h2{
 font-family:Grotesque MT;
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: bold;
 }
 i{ 
 font-family:Berthold script;
-font-size: 15pt;
+font-size: 12pt;
 }
 b{
   mix-blend-mode: normal;
@@ -68,14 +68,14 @@ a{ text-decoration:none;}
 
 h1 {
   margin-bottom:10px;
+  font-size: 10pt;
   font-weight: bold;
   font-family:Grotesque MT;}
 
 img {
-  width: 40vh;
+  width: 30vh;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  padding: 10px;
   background:white;
   }
 
