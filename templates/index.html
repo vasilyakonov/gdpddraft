@@ -8,8 +8,17 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="{{ url_for('static', filename='reset.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">></script>
  </head>
  <body>
+   <script>$(function() {
+$('#fade1').hover(function() { 
+    $('#fade2').fadeIn(); 
+}, function() { 
+    $('#fade2').fadeOut(); 
+});
+});
+   </script>
   <nav>
    <h2>
      <i>Vasily Dyakonov</i> <b>d</b> is avaliable for graphic design work
@@ -19,7 +28,7 @@
    <div class='object_eight'> <h1>Typefaces</h1> </div>
    <div class='object_one'> <h1>Journal For Raw Visual Data</h1> </div>
    <div class='object_three'> <h1>Interview Magazine</h1> </div>
-   <div class='object_five'> <a href='{{ url_for('calendar') }}'><h1>Calendar</h1></a> <img src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'> </div>
+   <div class='object_five'> <a href='{{ url_for('calendar') }}'><h1 id="fade1">Calendar</h1></a> <img id="fade2" src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'> </div>
    <div class='object_eight'> <h1>Barter</h1> </div>
    <div class='object_four'> <h1>Critical Poster</h1> </div>
    <div class='object_four'> <h1>Lugemik Posters</h1> </div>
