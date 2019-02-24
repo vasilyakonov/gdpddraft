@@ -81,6 +81,9 @@ img {
 #fade2{
 mix-blend-mode: normal;
 }
+#fade3{
+  mix-blend-mode: screen;
+}
 
 @media (min-width: 600px) {
   main {
@@ -88,9 +91,6 @@ mix-blend-mode: normal;
      grid-template-columns: auto auto auto auto ;
      grid-template-rows: 1fr 1fr 1fr;
   }
-
-
-
 
 
 div {

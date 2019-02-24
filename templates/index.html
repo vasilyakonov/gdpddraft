@@ -55,7 +55,7 @@ body {
   
    
 }
-div {
+.a1 {
   border: 1px dotted black;
   grid-row: auto;
   background-color: #fff;
@@ -96,12 +96,14 @@ img {
   transform: translate(-50%, -50%);
   }
 #fade2{
+  mix-blend-mode: normal;
 position: absolute;
 top: 50%;
 left: 50%;
   z-index: 2;
   isolation: isolate;
 }
+
 
 @media (min-width: 600px) {
   main {
@@ -114,7 +116,7 @@ left: 50%;
 
 
 
-div {
+.a1 {
   display: grid;
   grid-row: auto;
   column-width: 1fr;
@@ -133,7 +135,23 @@ div {
   position:relative;
 }
   
-  .container{isolation: isolate;}
+  .container{  border: 1px dotted black;
+  grid-row: auto;
+  background-color: #fff;
+  display: grid;
+  color: #000;
+  mix-blend-mode: normal;
+  border-radius: initial;
+  font-family: Standard;
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  height:20vh;
+  position:relative;}
   
   a{ text-decoration:none;}
 
@@ -170,7 +188,8 @@ img {
     
 }
 #fade2{
-background: white;
+  mix-blend-mode: normal;
+background-color: white;
   position: absolute;
 top: 50%;
 left: 50%;
@@ -178,6 +197,14 @@ left: 50%;
   isolation: isolate;
   
 }
+  #fade3{
+    mix-blend-mode: screen;
+     position: absolute;
+top: 50%;
+left: 50%;
+  
+  }
+
 }
    </style>
  </head>
@@ -197,18 +224,18 @@ $('#fade1').hover(function() {
    </h2>
   </nav>
   <main>
-   <div class='object_eight'> <h1>Typefaces</h1> </div>
-   <div class='object_one'> <h1>Journal For Raw Visual Data</h1> </div>
-   <div class='object_three'> <h1>Interview Magazine</h1> </div>
-   <div class='container'> <a href='{{ url_for('calendar') }}'><h1 id='fade1'>Calendar</h1></a> <img id='fade2' src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'><img src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'> </div>
-   <div class='object_eight'> <h1>Barter</h1> </div>
-   <div class='object_four'> <h1>Critical Poster</h1> </div>
-   <div class='object_four'> <h1>Lugemik Posters</h1> </div>
-    <div class='object_one'><h1>Riding to Work in the Year 2025</h1></div>
-   <div class='object_two'> <h1>Imposter</h1> </div>
-   <div class='object_three'> <h1>Tools</h1> </div>
-   <div class='object_six'> <h1>WYSIWYG</h1> </div>
-   <div class='object_seven'> <h1>Digital Unconscious</h1> </div>
+   <div class='a1'> <h1>Typefaces</h1> </div>
+   <div class='a1'> <h1>Journal For Raw Visual Data</h1> </div>
+   <div class='a1'> <h1>Interview Magazine</h1> </div>
+   <div class='a1'> <a href='{{ url_for('calendar') }}'><h1 id='fade1'>Calendar</h1></a> <img id='fade2' src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'><img id='fade3'  src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'> </div>
+   <div class='a1'> <h1>Barter</h1> </div>
+   <div class='a1'> <h1>Critical Poster</h1> </div>
+   <div class='a1'> <h1>Lugemik Posters</h1> </div>
+    <div class='a1'><h1>Riding to Work in the Year 2025</h1></div>
+   <div class='a1'> <h1>Imposter</h1> </div>
+   <div class='a1'> <h1>Tools</h1> </div>
+   <div class='a1'> <h1>WYSIWYG</h1> </div>
+   <div class='a1'> <h1>Digital Unconscious</h1> </div>
   </main>
  </body>
  <p class"hide">
