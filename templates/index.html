@@ -50,7 +50,7 @@ body {
   font-family: "Standard";
   line-height: 100%;
   min-height: 10vh;
-  background-image: linear-gradient(lightblue, grey, #FF3E00);
+  background-image: linear-gradient(lightblue, LightGray, Tomato, Red);
   
   
    
@@ -94,15 +94,14 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: normal;
   }
 #fade2{
-mix-blend-mode: initial;
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-color: normal;
+  z-index: 2;
+  isolation: isolate;
 }
 
 @media (min-width: 600px) {
@@ -173,7 +172,9 @@ mix-blend-mode: initial;
   position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%)
+transform: translate(-50%, -50%);
+  z-index: 1;
+  isolation: isolate;
 }
 }
    </style>
