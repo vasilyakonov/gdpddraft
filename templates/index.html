@@ -100,7 +100,7 @@ body {
 
 
 h1 {
- 
+  
   z-index:3;
   margin-top:0px;
   font-size: 10pt;
@@ -187,6 +187,9 @@ left: 50%;
   a{ text-decoration:none;}
 
 h1 {
+  background-color:blue;
+  height:5vh;
+  width: 20vh;
   z-index:3;
   margin-top:0px;
   font-weight: bold;
@@ -265,10 +268,10 @@ left: 50%;
       <script>
 $(function() {
 $('h1').hover(function() {
-    $('.a1').css('mix-blend-mode', 'screen');
+    $('.a1').css('mix-blend-mode', 'normal');
   }, function() {
     // on mouseout, reset the background colour
-    $('.a1').css('mix-blend-mode', 'normal');
+    $('.a1').css('mix-blend-mode', 'screen');
   });
 });</script>
  </body>
