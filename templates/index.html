@@ -240,37 +240,18 @@ left: 50%;
   .hide{display:none;}
 
 }
-   </style>
- </head>
+ </style>
     
+    </head>
+           
  <body>
-   <script>
-//$(function() {
-//$('#fade1').hover(function() { 
-  //  $('#fade2').fadeIn(); 
-//}, function() { 
- //   $('#fade2').fadeOut(3000); 
-//});
-//});  
-   </script>
-   
   <nav>
    <h2>
      <i>Vasily Dyakonov</i> <b>a</b>is avaliable for graphic design work
    </h2>
   </nav>
-   
-    <script>
-$(function() {
-$('#fade4').hover(function() {
-    $('#fade1').css('mix-blend-mode', 'screen');
-  }, function() {
-    // on mouseout, reset the background colour
-    $('#fade1').css('mix-blend-mode', 'normal');
-  });
-});</script>
   <main>
-   <div id='fade1' class='a1'> <h1 id='fade4'>Typefaces</h1> <img id='fade2' src='https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202019-02-24%20%D0%B2%2019.09.54.png?1551029818928' alt='calendar'><img id='fade3'  src='https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202019-02-24%20%D0%B2%2019.09.54.png?1551029818928' alt='calendar'></div>
+   <div id='fade1' class='a1'> <h1 id='fade4'>Typefaces</h1> <img id='fade2' src='https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202019-02-24%20%D0%B2%2019.09.54.png?1551029818928' alt='calendar'><img id='fade3'  src='https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202019-02-24%20%D0%B2%2019.09.54.png?1551029818928' alt='typefaces'></div>
    <div class='a1'> <h1>Journal For Raw Visual Data</h1> </div>
    <div class='a1'> <h1>Interview Magazine</h1> </div>
    <div id='fade1' class='a1'> <!--<a href='{{ url_for('calendar') }}'>--><h1 id='fade4'>Calendar</h1> <img id='fade2' src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'><img id='fade3'  src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'> </div>
@@ -289,6 +270,25 @@ $('#fade4').hover(function() {
 {% block content %}
     {% endblock %}
  </p>
+    <script>
+$(function() {
+$('#fade2').hover(function() {
+    $('#fade1').css('mix-blend-mode', 'screen');
+  }, function() {
+    // on mouseout, reset the background colour
+    $('#fade1').css('mix-blend-mode', 'normal');
+  });
+});</script>
 
+   
 
+   <script>
+$(function() {
+$('#fade1').hover(function() { 
+    $('#fade2').fadeIn(); 
+}, function() { 
+    $('#fade2').fadeOut(3000); 
+});
+});  
+   </script>
 </html>
