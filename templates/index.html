@@ -38,7 +38,7 @@ font-family:Grotesque MT;
 }
 i{ 
 font-family:Berthold script;
-font-size: 12pt;
+font-size: 13pt;
 }
 b{
   mix-blend-mode: normal;
@@ -50,13 +50,13 @@ body {
   font-family: "Standard";
   line-height: 100%;
   min-height: 10vh;
-  background-image: linear-gradient(lightblue, orange, #FF3E00, white);
+  background-image: linear-gradient(lightblue, grey, #FF3E00);
   
   
    
 }
 div {
-  border: 1px;
+  border: 1px dotted black;
   grid-row: auto;
   background-color: #fff;
   display: grid;
@@ -90,13 +90,19 @@ img {
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: normal;
   }
 #fade2{
-mix-blend-mode: normal;
+mix-blend-mode: initial;
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%)
+transform: translate(-50%, -50%);
+color: normal;
 }
 
 @media (min-width: 600px) {
@@ -136,10 +142,15 @@ h1 {
   font-family:Grotesque MT;
 }
 img {
-  width: 40vh;
+  width: 30vh;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: normal;
   }
   nav {
      display: grid;
@@ -158,7 +169,7 @@ img {
     
 }
 #fade2{
-mix-blend-mode: normal;
+mix-blend-mode: initial;
   position: absolute;
 top: 50%;
 left: 50%;
