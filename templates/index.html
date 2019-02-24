@@ -56,7 +56,6 @@ body {
    
 }
 .a1 {
-  border: 1px dotted black;
   grid-row: auto;
   background-color: #fff;
   display: grid;
@@ -141,7 +140,7 @@ left: 50%;
   grid-row: auto;
   column-width: 1fr;
     background-color: #fff;
-  color: lightblue;
+  color: lightgray;
   mix-blend-mode: screen;
   border-radius: initial;
   font-family: Standard;
@@ -154,12 +153,10 @@ left: 50%;
   height:50vh;
   position:relative;
   opacity:0;
-  -webkit-transition: opacity .5s linear;
+  -webkit-transition: opacity .5s ease-out;
 }
   
   .a1:hover{  
-
-  border: 1px dotted black;
   grid-row: auto;
   background-color: #fff;
   display: grid;
@@ -176,7 +173,8 @@ left: 50%;
   margin-right:0px;
   position:relative;
   isolation: isolate;
-  opacity:1;}
+  opacity:1;
+  -webkit-transition: color .5s ease-out;}
   
   
   
