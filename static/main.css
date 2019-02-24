@@ -78,6 +78,9 @@ img {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background:white;
   }
+#fade2{
+mix-blend-mode: normal;
+}
 
 @media (min-width: 600px) {
   main {
@@ -137,5 +140,7 @@ img {
   margin-right:0px;
     
 }
-
+#fade2{
+mix-blend-mode: normal;
+}
 }
