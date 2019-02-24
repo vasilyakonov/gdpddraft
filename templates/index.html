@@ -8,8 +8,154 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="{{ url_for('static', filename='reset.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">></script>
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>@font-face {
+font-family: "Standard";
+src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard-Book.otf?1548162349690");
+}
+.hide{display:none;}
+nav {
+     display: grid;
+  column-width: auto;
+  background-color: #fff;
+  color: #000;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: Standard;
+  font-size: 12pt;
+  margin: 0;
+ 
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;}
+
+h2{
+font-family:Grotesque MT;
+  font-size: 10pt;
+  font-weight: bold;
+}
+i{ 
+font-family:Berthold script;
+font-size: 12pt;
+}
+b{
+  mix-blend-mode: normal;
+color:white;}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Standard";
+  line-height: 100%;
+  min-height: 10vh;
+  background-image: linear-gradient(lightblue, orange, #FF3E00, white);
+  
+  
+   
+}
+div {
+  grid-row: auto;
+  background-color: #fff;
+  display: grid;
+  color: #000;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: Standard;
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  height:20vh;
+ 
+  
+}
+
+a{ text-decoration:none;}
+
+h1 {
+  margin-bottom:10px;
+  font-size: 10pt;
+  font-weight: bold;
+  font-family:Grotesque MT;}
+
+img {
+  width: 30vh;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background:white;
+  }
+#fade2{
+mix-blend-mode: normal;
+}
+
+@media (min-width: 600px) {
+  main {
+    display: grid;
+     grid-template-columns: auto auto auto auto ;
+     grid-template-rows: 1fr 1fr 1fr;
+  }
+
+
+
+
+
+div {
+  display: grid;
+  grid-row: auto;
+  column-width: 1fr;
+    background-color: #fff;
+  color: #000;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: Standard;
+  font-size: 12pt;
+  margin: 0;
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  height:50vh;
+}
+  a{ text-decoration:none;}
+
+h1 {
+  margin-bottom:10px;
+  font-weight: bold;
+  font-family:Grotesque MT;
+}
+img {
+  width: 40vh;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background:white;
+  }
+  nav {
+     display: grid;
+  column-width: auto;
+    background-color: #fff;
+  color: #000;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: Standard;
+  font-size: 12pt;
+  margin: 0;
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+    
+}
+#fade2{
+mix-blend-mode: normal;
+}
+}
+   </style>
  </head>
+    
  <body>
    <script>$(function() {
 $('#fade1').hover(function() { 
