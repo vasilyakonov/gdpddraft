@@ -154,7 +154,7 @@ left: 50%;
   height:50vh;
   position:relative;
   opacity:0;
-  -webkit-transition: opacity .5s ease-in;
+  -webkit-transition: opacity .5s linear;
 }
   
   .a1:hover{  
@@ -240,7 +240,7 @@ $(function() {
 $('#fade1').hover(function() { 
     $('#fade2').fadeIn(); 
 }, function() { 
-    $('#fade2').fadeOut(); 
+    $('#fade2').fadeOut(3000); 
 });
 });
    </script>
