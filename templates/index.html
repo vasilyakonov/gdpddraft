@@ -9,7 +9,8 @@
   <link href="{{ url_for('static', filename='reset.css') }}" rel="stylesheet">
   <link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <style>@font-face {
+    <style>
+@font-face {
 font-family: "Standard";
 src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard-Book.otf?1548162349690");
 }
@@ -55,6 +56,7 @@ body {
    
 }
 div {
+  border: 1px;
   grid-row: auto;
   background-color: #fff;
   display: grid;
@@ -70,6 +72,7 @@ div {
   margin-left: 0px;
   margin-right:0px;
   height:20vh;
+  position:relative;
  
   
 }
@@ -90,6 +93,10 @@ img {
   }
 #fade2{
 mix-blend-mode: normal;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)
 }
 
 @media (min-width: 600px) {
@@ -119,6 +126,7 @@ div {
   margin-left: 0px;
   margin-right:0px;
   height:50vh;
+  position:relative;
 }
   a{ text-decoration:none;}
 
@@ -151,6 +159,10 @@ img {
 }
 #fade2{
 mix-blend-mode: normal;
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%)
 }
 }
    </style>
@@ -174,7 +186,7 @@ $('#fade1').hover(function() {
    <div class='object_eight'> <h1>Typefaces</h1> </div>
    <div class='object_one'> <h1>Journal For Raw Visual Data</h1> </div>
    <div class='object_three'> <h1>Interview Magazine</h1> </div>
-   <div class='object_five'> <a href='{{ url_for('calendar') }}'><h1 id='fade1'>Calendar</h1></a> <img id='fade2' src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'><img src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'> </div>
+   <div class='container'> <a href='{{ url_for('calendar') }}'><h1 id='fade1'>Calendar</h1></a> <img id='fade2' src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'><img src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'> </div>
    <div class='object_eight'> <h1>Barter</h1> </div>
    <div class='object_four'> <h1>Critical Poster</h1> </div>
    <div class='object_four'> <h1>Lugemik Posters</h1> </div>
