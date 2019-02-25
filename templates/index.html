@@ -293,6 +293,8 @@ left: 50%;
    <div class='a1'> <h1>Art & Design Digest</h1> </div>
   </main>
       <script>
+        if (screen.width >= 541) {
+
 $(function() {
 $('h1').hover(function() {
     $('.a1').css('mix-blend-mode', 'normal');
@@ -301,7 +303,9 @@ $('h1').hover(function() {
     $('.a1').css('mix-blend-mode', 'screen');
   });
   
-});</script>
+});
+   
+        }</script>
  </body>
  <p class"hide">
   {% extends "layout.html" %}
