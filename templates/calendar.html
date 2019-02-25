@@ -5,8 +5,8 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
 <style> 
-  body{ display:grid;
-    grid-template-columns:1fr;
+  .grid{ display:grid;
+    height:90%;
      grid-template-rows: 10vh 1fr 10vh;
 
 }
@@ -20,12 +20,11 @@ img  {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: normal;
   }
   
   }
     div{ display:grid;
-      background: transparent;
+      background: red;
   
   color: #000;
   border-radius: initial;
@@ -33,18 +32,17 @@ img  {
   font-size: 12pt;
   margin: 0;
   /*opacity: 0.9;*/
-  padding: 30px;
+  padding: 10px;
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
-      height: 60vh;
+      height: 10vh;
   position:relative;}
   
   .text{ font-family: Standard Book;
-    background color:yellow;
     font-size:12pt;
-    padding:10vh;
-    background: transparent;
+    padding:5vh;
+    background: yellow;
   
   }
      
@@ -53,6 +51,9 @@ img  {
     
   </head>
   <body>
+    <div class="grid">
+      
+    
      <div>
       <p class="text">
         This is a calendar page for January 2020 in estonian. Part of a collaborative project at EKA Tallin.
@@ -68,10 +69,11 @@ img  {
       </p>
          
        </div>
+      </div>
   </body>
-<div>
+<p>
   {% extends "layout.html" %}
 {% block content %}
- </div>
- {% endblock %}
+  {% endblock %}
+ </p>
 </html> 
