@@ -9,6 +9,13 @@
 font-family: "Standard";
 src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FStandard-Book.otf?1551126392235");}
   
+   @font-face {
+font-family: "Berthold Script";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FBerthold%20Script%20Regular.ttf?1551132843478");}
+  @font-face {
+font-family: "Smilin_John";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FSmilin_John.ttf?1551128665707");}
+  
   body{font-family:"Standard";}
   nav {display: grid;
      grid-template-columns:30vh 1fr;
@@ -18,7 +25,7 @@ src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FStandard
   
   .grid{ display:grid;
     height:160vh;
-     grid-template-rows: 10vh 10vh 10vh 10vh;
+     grid-template-rows: 20vh 20vh 20vh 10vh;
 
 }
 
@@ -28,7 +35,7 @@ img {
   /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
   background:white;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 60%;
   transform: translate(-50%, -50%);
   }
@@ -54,10 +61,10 @@ img {
     padding:5vh;
     background:white;}
   
-    .nav{font-family: Berthold Script;
+    .nav{font-family: "Berthold Script";
       font-size:20pt;}
   
-      .nav:hover{font-family: Smilin_John;}
+      .nav:hover{font-family: "Smilin_John";}
   .image{display:grid;
     grid-template-rows: 1fr 1fr;
   }
@@ -75,7 +82,7 @@ img {
   <body>
     <nav><div>
       <a href='{{ url_for('index') }}'><p class="nav">
-        ⭪
+        ←
       </p></a>
       </div>
       
