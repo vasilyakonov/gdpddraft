@@ -23,9 +23,12 @@ def index():
 def calendar():
      return render_template('calendar.html')
   
+@app.route('/typefaces')
+def typefaces():
+     return render_template('typefaces.html')
+  
 if __name__ == '__main__':
     app.run(debug=False)
-  
   
   
 ubprocess.call("refresh") 
