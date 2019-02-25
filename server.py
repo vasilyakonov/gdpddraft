@@ -27,6 +27,10 @@ def calendar():
 def typefaces():
      return render_template('typefaces.html')
   
+@app.route('/lugemik')
+def lugemik():
+     return render_template('lugemik.html')
+  
 if __name__ == '__main__':
     app.run(debug=False)
   
