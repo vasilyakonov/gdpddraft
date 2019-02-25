@@ -120,10 +120,6 @@ object12 = '%s' % (random.choice(tuple(entries_list)))
 soup.main.append(object12)
 entries_list.remove(object12)
 
-object13 = '%s' % (random.choice(tuple(entries_list)))
-
-soup.main.append(object13)
-entries_list.remove(object13)
 
 
 # save the file again
