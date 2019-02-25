@@ -12,18 +12,18 @@
   
   
   .grid{ display:grid;
-    height:150vh;
+    height:160vh;
      grid-template-rows: 10vh 1fr 1fr 10vh;
 
 }
 
 img {
-  width: 45vh;
+  width: 40vh;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background:white;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   }
@@ -47,7 +47,7 @@ img {
   .text{ font-family: Standard Book;
     font-size:12pt;
     padding:5vh;
-    background: yellow;}
+    background:white;}
   
     .nav{font-family: Berthold Script;
       font-size:20pt;}
@@ -56,6 +56,8 @@ img {
   .image{display:grid;
     grid-template-rows: 1fr 1fr;
   }
+  a{text-decoration:none;
+  color:black;}
      
     
     </style>
@@ -63,9 +65,9 @@ img {
   </head>
   <body>
     <nav><div>
-      <p class="nav">
+      <a href='{{ url_for('index') }}'><p class="nav">
         ⮌
-      </p>
+      </p></a>
       </div>
       
       <div>
