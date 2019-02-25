@@ -1,7 +1,10 @@
-
 @font-face {
 font-family: "Standard";
-src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard-Book.otf?1548162349690");
+src: url("https://cdn.glitch.com/de637ebd-bf77-4418-9b4a-48177fd57198%2FStandard-Book.otf?1548162349690");}
+      
+@font-face{
+font-family: "Grotesque MT";
+  src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FGrotesqueMT-Regular.otf?1551029471368")};
 }
 .hide{display:none;}
 nav {
@@ -11,7 +14,7 @@ nav {
   color: #000;
   mix-blend-mode: screen;
   border-radius: initial;
-  font-family: Standard;
+  font-family: "Standard";
   font-size: 12pt;
   margin: 0;
  
@@ -21,13 +24,13 @@ nav {
   margin-right:0px;}
 
 h2{
-font-family:Grotesque MT;
+font-family:"Grotesque MT";
   font-size: 10pt;
-  font-weight: bold;
+  font-weight:bold;
 }
 i{ 
 font-family:Berthold script;
-font-size: 12pt;
+font-size: 13.1pt;
 }
 b{
   mix-blend-mode: normal;
@@ -39,19 +42,19 @@ body {
   font-family: "Standard";
   line-height: 100%;
   min-height: 10vh;
-  background-image: linear-gradient(lightblue, orange, #FF3E00, white);
+  background-image: linear-gradient(lightblue, LightGray, Tomato, Red);
   
   
    
 }
-div {
+.a1 {
   grid-row: auto;
   background-color: #fff;
   display: grid;
   color: #000;
   mix-blend-mode: screen;
   border-radius: initial;
-  font-family: Standard;
+  font-family: "Standard";
   font-size: 12pt;
   margin: 0;
   /*opacity: 0.9;*/
@@ -60,30 +63,57 @@ div {
   margin-left: 0px;
   margin-right:0px;
   height:20vh;
+  position:relative;
  
   
 }
+      
+      .container{  border: 1px dotted black;
+  grid-row: auto;
+  background-color: #fff;
+  display: grid;
+  color: #000;
+  mix-blend-mode: normal;
+  border-radius: initial;
+  font-family: "Standard";
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  position:relative;
+  isolation: isolate;}
 
-a{ text-decoration:none;}
 
 h1 {
-  margin-top:10px;
+  
+  z-index:3;
+  margin-top:0px;
   font-size: 10pt;
   font-weight: bold;
-  font-family:Grotesque MT;}
+  font-family:"Grotesque MT";}
 
 img {
   width: 30vh;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   }
 #fade2{
-mix-blend-mode: normal;
+  mix-blend-mode: normal;
+position: absolute;
+top: 50%;
+left: 50%;
+  z-index: 2;
+  isolation: isolate;
 }
-#fade3{
-  mix-blend-mode: screen;
-}
+
 
 @media (min-width: 600px) {
   main {
@@ -93,15 +123,18 @@ mix-blend-mode: normal;
   }
 
 
-div {
+
+
+
+.a1 {
   display: grid;
   grid-row: auto;
   column-width: 1fr;
     background-color: #fff;
-  color: #000;
+  color: lightgray;
   mix-blend-mode: screen;
   border-radius: initial;
-  font-family: Standard;
+  font-family: "Standard";
   font-size: 12pt;
   margin: 0;
   padding: 30px;
@@ -109,28 +142,67 @@ div {
   margin-left: 0px;
   margin-right:0px;
   height:50vh;
+  position:relative;
+  opacity:0;
+  -webkit-transition: opacity .5s ease-out;
 }
+  
+  .a1:hover{  
+  grid-row: auto;
+  background-color: #fff;
+  display: grid;
+  color: black;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: "Standard";
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  position:relative;
+  isolation: isolate;
+  opacity:1;
+  -webkit-transition: color .5s ease-out;}
+  
+  
+  
+  
+  
+  
   a{ text-decoration:none;}
 
 h1 {
-  margin-top:10px;
+  background-color:transparent;
+  height:5vh;
+  width: 25vh;
+  z-index:3;
+  margin-top:0px;
   font-weight: bold;
-  font-family:Grotesque MT;
+  font-family:"Grotesque MT";
 }
 img {
-  width: 40vh;
+  width: 30vh;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: normal;
   }
   nav {
      display: grid;
-  column-width: auto;
+  grid-template-columns: 50vh 1fr ;
+     grid-template-rows: 9vh;
     background-color: #fff;
   color: #000;
   mix-blend-mode: screen;
   border-radius: initial;
-  font-family: Standard;
+  font-family: "Standard";
   font-size: 12pt;
   margin: 0;
   padding: 30px;
@@ -140,6 +212,33 @@ img {
     
 }
 #fade2{
-mix-blend-mode: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+top: 50%;
+left: 50%;
+  z-index: 1;
+  isolation: isolate;
+  
 }
+  #fade3{
+    mix-blend-mode: screen;
+     position: absolute;
+top: 50%;
+left: 50%;
+  
+  }
+  .hide{display:none;}
+  
+  .headerchange{padding:5px;
+    font-size: 10pt;
+  font-weight: bold;
+  font-family:"Grotesque MT";
+  }
+  .headerchange:hover{padding:5px;
+    font-size: 40pt;
+  font-weight: bold;
+  font-family:"Smilin_John";
+    color:red;
+  }
+
 }
