@@ -121,7 +121,6 @@ soup.main.append(object12)
 entries_list.remove(object12)
 
 
-
 # save the file again
 with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
