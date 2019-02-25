@@ -31,6 +31,10 @@ def typefaces():
 def lugemik():
      return render_template('lugemik.html')
   
+@app.route('/imposter')
+def imposter():
+     return render_template('imposter.html')
+  
 if __name__ == '__main__':
     app.run(debug=False)
   
