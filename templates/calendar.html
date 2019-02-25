@@ -4,7 +4,14 @@
   </title>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-<style> img  {
+<style> 
+  body{ display:grid;
+    grid-template-columns:1fr;
+     grid-template-rows: 10vh 1fr 10vh;
+
+}
+
+img  {
   width: 50vh;
   height: auto;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -17,7 +24,8 @@
   }
   
   }
-    div{ background: transparent;
+    div{ display:grid;
+      background: transparent;
   
   color: #000;
   border-radius: initial;
@@ -29,10 +37,13 @@
   text-align: left;
   margin-left: 0px;
   margin-right:0px;
-      height: 60vh;}
+      height: 60vh;
+  position:relative;}
+  
   .text{ font-family: Standard Book;
+    background color:yellow;
     font-size:12pt;
-    padding:60px;
+    padding:10vh;
     background: transparent;
   
   }
@@ -42,18 +53,18 @@
     
   </head>
   <body>
-   
+     <div>
+      <p class="text">
+        This is a calendar page for January 2020 in estonian. Part of a collaborative project at EKA Tallin.
+      </p>
+       </div>
     <div>
       <img src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'>
     </div>
-     <div>
-      <p class="text">
-        This is a calendar page for January 2020 in estonian.
-      </p>
-       </div>
+   
        <div>
           <p class="text">
-        Part of a collaborative project at EKA Tallin, 2018
+        Riso(2 colour), 2018
       </p>
          
        </div>
