@@ -266,23 +266,26 @@ left: 50%;
    <div class='a1'> <h1>Digital Unconscious</h1> </div>
   </main>
       <script>
+$.fn.extend({
+  qcss: function(css) {
+    return $(this).queue(function(next) {
+      $(this).css(css);
+      next();
+    });
+  }
+});
+        
 $(function() {
 $('h1').hover(function() {
     $('.a1')
-     .delay(800)
-     .queue(function (next) {
-     $(this).css('mix-blend-mode', 'normal');
-      next();
+    .delay(800)
+    .qcss({ mixBlendMode: 'normal'});
   }, function() {
     // on mouseout, reset the background colour
     $('.a1').css('mix-blend-mode', 'screen');
   });
   
 });</script>
-
-   
-   
-   
  </body>
  <p class"hide">
   {% extends "layout.html" %}
