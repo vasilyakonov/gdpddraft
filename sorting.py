@@ -129,6 +129,9 @@ object12 = '%s' % (random.choice(tuple(entries_list)))
 soup.main.append(object12)
 entries_list.remove(object12)
 
+gradient ='%s' % (random.choice(tuple(gradients_list)))
+soup.style.append(gradient)
+
 
 # save the file again
 with open("./templates/index.html", "w") as outf:
