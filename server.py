@@ -186,5 +186,9 @@ def imposter():
 def hypergraphx():
      return render_template('hypergraphx.html')
   
+@app.route('/riding')
+def riding():
+     return render_template('riding.html')
+  
 if __name__ == '__main__':
     app.run(debug=False)
