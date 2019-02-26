@@ -1,18 +1,4 @@
 # -*- coding: utf-8 -*-
-import os
-import requests
-import random
-import flask
-import shutil
-import bs4
-import jinja2
-import subprocess
-import json
-
-
-
-
-# -*- coding: utf-8 -*-
 
 import os
 import requests
@@ -210,3 +196,4 @@ def cposter():
   
 if __name__ == '__main__':
     app.run(debug=False)
+    
