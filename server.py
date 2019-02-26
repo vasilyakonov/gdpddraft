@@ -198,6 +198,10 @@ def interview():
 def digest():
      return render_template('digest.html')
   
+@app.route('/tools')
+def tools():
+     return render_template('tools.html')
+  
 if __name__ == '__main__':
     app.run(debug=False)
     
