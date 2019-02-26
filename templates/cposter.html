@@ -1,1 +1,118 @@
- 
+<html>
+  <head> <title>
+    Critical Studies Poster
+  </title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+<style> 
+  @font-face {
+font-family: "Standard";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FStandard-Book.otf?1551126392235");}
+  
+   @font-face {
+font-family: "Berthold Script";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FBerthold%20Script%20Regular.ttf?1551132843478");}
+  @font-face {
+font-family: "Smilin_John";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FSmilin_John.ttf?1551128665707");}
+      
+
+  nav {display: grid;
+     grid-template-columns:30vh 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  
+  .grid{ display:grid;
+    height:90vh;
+     grid-template-rows: 20vh 1fr  10vh;
+
+}
+
+img {
+  width: 40vh;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  
+    div{ display:grid;
+     
+  color: #000;
+  border-radius: initial;
+  
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 10px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+      height: auto;
+  position:relative;}
+  
+  .text{ font-family: "Standard";
+    font-size:12pt;
+    padding:5vh;
+    background:white;}
+  
+    .nav{font-family: "Berthold Script";
+      font-size:20pt;}
+  
+      .nav:hover{font-family: "Smilin_John";}
+  .image{display:grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  a{text-decoration:none;
+  color:black;}
+     
+    
+    </style>
+    
+  </head>
+  <body>
+    <nav><div>
+      <a href='{{ url_for('index') }}'><p class="nav">
+        ←
+      </p></a>
+      </div>
+      
+      <div>
+        <p class="nav">
+           Critical Studies Poster
+        </p>
+      </div>
+    
+    </nav>
+    <div class="grid">
+      
+    
+     <div>
+      <p class="text">
+        A poster for an assignment, highlighting a poignant question in graphic design.
+      </p>
+       </div>
+      
+      <div>
+        <img src='https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FPoster%20v1.jpg?1551137102412' alt='calendar2'>
+      </div>
+   
+       <div>
+          <p class="text">
+        Moscow, 2019
+      </p>
+         
+       </div>
+      </div>
+  </body>
+<p>
+  {% extends "layout.html" %}
+{% block content %}
+  {% endblock %}
+ </p>
+</html>  

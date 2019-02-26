@@ -202,6 +202,10 @@ def digest():
 def tools():
      return render_template('tools.html')
   
+@app.route('/cposter')
+def cposter():
+     return render_template('cposter.html')
+  
 if __name__ == '__main__':
     app.run(debug=False)
     
