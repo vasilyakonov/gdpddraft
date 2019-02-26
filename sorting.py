@@ -48,6 +48,15 @@ for f in the_entries:
 print len(entries_list)
 
 
+gradient_response = open('gradients.json').read()
+the_gradients = json.loads(gradients_response)
+gradients_list = []
+
+
+for f in the_gradients:
+   gradients_list.append(f)
+print len(gradients_list)
+
 
 # load the file
 with open("./templates/index.html") as inf:
