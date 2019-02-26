@@ -189,6 +189,10 @@ def hypergraphx():
 @app.route('/riding')
 def riding():
      return render_template('riding.html')
+
+@app.route('/interview')
+def interview():
+     return render_template('interview.html')
   
 if __name__ == '__main__':
     app.run(debug=False)
