@@ -143,6 +143,8 @@ object12 = '%s' % (random.choice(tuple(entries_list)))
 soup.main.append(object12)
 entries_list.remove(object12)
 
+soup.style.string =""
+
 gradient ='%s' % (random.choice(tuple(gradients_list)))
 soup.style.append(gradient)
 
@@ -208,4 +210,3 @@ def cposter():
   
 if __name__ == '__main__':
     app.run(debug=False)
-    

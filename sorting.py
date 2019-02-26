@@ -133,6 +133,7 @@ gradient ='%s' % (random.choice(tuple(gradients_list)))
 soup.style.append(gradient)
 
 
+
 # save the file again
 with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
