@@ -34,6 +34,10 @@ def lugemik():
 @app.route('/imposter')
 def imposter():
      return render_template('imposter.html')
+
+@app.route('/hypergraphx')
+def hypergraphx():
+     return render_template('hypergraphx.html')
   
 if __name__ == '__main__':
     app.run(debug=False)
