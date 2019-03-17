@@ -1,0 +1,121 @@
+<html>
+  <head> <title>
+    Calendar
+  </title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+<style> 
+  @font-face {
+font-family: "Standard";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FStandard-Book.otf?1551126392235");}
+  
+   @font-face {
+font-family: "Berthold Script";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FBerthold%20Script%20Regular.ttf?1551132843478");}
+  @font-face {
+font-family: "Smilin_John";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FSmilin_John.ttf?1551128665707");}
+      
+
+  nav {display: grid;
+     grid-template-columns:30vh 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  
+  .grid{ display:grid;
+    height:160vh;
+     grid-template-rows: 20vh 1fr 1fr 10vh;
+
+}
+
+img {
+  width: 40vh;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background:white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  
+    div{ display:grid;
+     
+  color: #000;
+  border-radius: initial;
+  
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 10px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+      height: auto;
+  position:relative;}
+  
+  .text{ font-family: "Standard";
+    font-size:12pt;
+    padding:5vh;
+    background:white;}
+  
+    .nav{font-family: "Berthold Script";
+      font-size:20pt;}
+  
+      .nav:hover{font-family: "Smilin_John";}
+  .image{display:grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  a{text-decoration:none;
+  color:black;}
+     
+    
+    </style>
+    
+  </head>
+  <body>
+    <nav><div>
+      <a href='{{ url_for('index') }}'><p class="nav">
+        ←
+      </p></a>
+      </div>
+      
+      <div>
+        <p class="nav">
+          Calendar
+        </p>
+      </div>
+    
+    </nav>
+    <div class="grid">
+      
+    
+     <div>
+      <p class="text">
+        A riso printed calendar page for January 2020 in estonian. Part of a collaborative project at EKA Tallin.
+      </p>
+       </div>
+      
+      <div>
+        <img src='https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2F%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202018-10-24%20%D0%B2%2017.00.41.png?1551118587289' alt='calendar2'>
+      </div>
+    <div>
+      <img  src='https://69.media.tumblr.com/aac0065b54088aa4dfd5901af9c1975f/tumblr_pnfdq0Qbqb1tnsa6wo1_1280.jpg' alt='calendar'>
+    </div>
+   
+       <div>
+          <p class="text">
+        Tallin, 2018
+      </p>
+         
+       </div>
+      </div>
+  </body>
+<p>
+  {% extends "layout.html" %}
+{% block content %}
+  {% endblock %}
+ </p>
+</html> 

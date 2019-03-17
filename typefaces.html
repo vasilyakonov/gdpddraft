@@ -1,0 +1,131 @@
+<html>
+  <head> <title>
+    Typefaces
+  </title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+<style> 
+  @font-face {
+font-family: "Standard";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FStandard-Book.otf?1551126392235");}
+  
+   @font-face {
+font-family: "Berthold Script";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FBerthold%20Script%20Regular.ttf?1551132843478");}
+  @font-face {
+font-family: "Smilin_John";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FSmilin_John.ttf?1551128665707");}
+  
+  body{font-family:"Standard";}
+  nav {display: grid;
+     grid-template-columns:30vh 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  
+  .grid{ display:grid;
+    height:160vh;
+     grid-template-rows: 20vh 20vh 20vh 10vh;
+
+}
+
+img {
+  width: auto;
+  height: auto;
+  /*box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+  background:white;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  }
+  
+  
+    div{ display:grid;
+     
+  color: #000;
+  border-radius: initial;
+  
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 10px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+      height: auto;
+  position:relative;}
+  
+  .text{ font-family: "Standard";
+    font-size:12pt;
+    padding:5vh;
+    background:white;}
+  
+    .nav{font-family: "Berthold Script";
+      font-size:20pt;}
+  
+      .nav:hover{font-family: "Smilin_John";}
+  .image{display:grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  a{text-decoration:none;
+  color:black;}
+  .text1{ont-family: "Standard";
+    font-size:12pt;
+    padding:5vh;
+    background:white;}
+     
+    
+    </style>
+    
+  </head>
+  <body>
+    <nav><div>
+      <a href='{{ url_for('index') }}'><p class="nav">
+        ←
+      </p></a>
+      </div>
+      
+      <div>
+        <p class="nav">
+          Typefaces
+        </p>
+      </div>
+    
+    </nav>
+    <div class="grid">
+      
+    
+     <div>
+      <p class="text">
+        A Small Collection of typefaces I made 2018-now.
+      </p>
+       </div>
+      
+      <div>
+        <p class"text1">
+          Bureau Mono
+        </p>
+        <a href="https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FBureauMono0.31spacing-20-Mono.otf?1551125433339" download><img src='http://icons.iconarchive.com/icons/iconfactory/copland-4/32/Imation-Disk-1-icon.png' alt='type1'></a>
+      </div>
+    <div>
+     <p class"text1">
+          BusFont(Russian Cyrillic Only)
+        </p>
+      <a href="https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FBUSFONT1.9-Regular.otf?1551125462173" download> <img  src='http://icons.iconarchive.com/icons/iconfactory/copland-4/32/Imation-Disk-6-icon.png' alt='type2'></a>
+    </div>
+   
+       <div>
+          <p class="text">
+        Moscow, 2018
+      </p>
+         
+       </div>
+      </div>
+  </body>
+<p>
+  {% extends "layout.html" %}
+{% block content %}
+  {% endblock %}
+ </p>
+</html> 
