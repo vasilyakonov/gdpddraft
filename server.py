@@ -204,4 +204,6 @@ with open("./docs/index.html", "w") as outf:
 #subprocess.call("refresh")
 u = uuid.uuid1()
 #subprocess.call('git commit -a -m "%s"' % uuid.uuid1())
-subprocess.call('git push')
+process = subprocess.Popen(["git", 'commit -a -m "%s"' % uuid.uuid1()], stdout=subprocess.PIPE)
+output = process.communicate()[0]
+output = subprocess.check_output(["git", "push"])
