@@ -10,7 +10,6 @@ import jinja2
 import subprocess
 import json
 
-
 from bs4 import BeautifulSoup 
 
 
@@ -196,6 +195,6 @@ def cposter():
      return render_template('cposter.html')
   
 if __name__ == '__main__':
-    app.run(ssl_context='adhoc')
+    app.run(debug=False)
     
-subprocess.call("refresh")
+#subprocess.call("refresh")
