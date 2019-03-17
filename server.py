@@ -9,6 +9,9 @@ import bs4
 import jinja2
 import subprocess
 import json
+import uuid
+
+u = uuid.uuid1()
 
 from bs4 import BeautifulSoup 
 
@@ -199,3 +202,5 @@ with open("./docs/index.html", "w") as outf:
     
     
 #subprocess.call("refresh")
+u = uuid.uuid1()
+subprocess.call('git commit -a -m "%s"') % uuid.uuid1()

@@ -5,3 +5,4 @@ json
 flask
 gitpython
 git
+uuid
