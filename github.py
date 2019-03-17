@@ -12,4 +12,6 @@ repo.index.add(file_list)
 repo.index.commit(commit_message)
 origin = repo.remote('origin')
 origin.push()
-print(origin.push())
+
+info = origin.push()[0]
+print(info.summary)
