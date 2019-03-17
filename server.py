@@ -59,7 +59,7 @@ print len(gradients_list)
 
 
 # load the file
-with open("./templates/index.html") as inf:
+with open("./docs/index.html") as inf:
     txt = inf.read()
     soup = bs4.BeautifulSoup(txt, features="html.parser")
     print(soup.prettify())
@@ -136,7 +136,7 @@ soup.style.append(gradient)
 
 
 # save the file again
-with open("./templates/index.html", "w") as outf:
+with open("./docs/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
 
