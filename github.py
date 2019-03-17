@@ -1,23 +1,11 @@
 # -*- coding: utf-8 -*-
 from git import Repo
 
-repo_dir = 'templates'
+repo_dir = 'static'
 repo = Repo(repo_dir, search_parent_directories=True)
 file_list = [
-  'templates/calendar.html',
-'templates/cool-file.html',
-'templates/cposter.html',
-'templates/digest.html',
-'templates/hypergraphx.html',
-'templates/imposter.html',
-'templates/index.html',
-'templates/interview.html',
-'templates/layout.html',
-'templates/lugemik.html',
-'templates/riding.html',
-'templates/tools.html',
-'templates/typefaces.html',
-  'templates/README.md'
+  'static/main.css',
+'static/reset.css'
 ]
 commit_message = 'Add simple regression analysis'
 repo.index.add(file_list)
