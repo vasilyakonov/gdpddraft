@@ -144,58 +144,58 @@ with open("./templates/index.html", "w") as outf:
 
 
 
-from flask import Flask
+#from flask import Flask
 
-from flask import Flask, render_template
+#from flask import Flask, render_template
 
-app = Flask(__name__)
+#app = Flask(__name__)
 
-@app.route('/')
-def index():
-     return render_template('index.html')
+#@app.route('/')
+#def index():
+     #return render_template('index.html')
   
-@app.route('/calendar')
-def calendar():
-     return render_template('calendar.html')
+#@app.route('/calendar')
+#def calendar():
+    # return render_template('calendar.html')
   
-@app.route('/typefaces')
-def typefaces():
-     return render_template('typefaces.html')
+#@app.route('/typefaces')
+#def typefaces():
+     #return render_template('typefaces.html')
   
-@app.route('/lugemik')
-def lugemik():
-     return render_template('lugemik.html')
+#@app.route('/lugemik')
+#def lugemik():
+     #return render_template('lugemik.html')
   
-@app.route('/imposter')
-def imposter():
-     return render_template('imposter.html')
+#@app.route('/imposter')
+#def imposter():
+     #return render_template('imposter.html')
 
-@app.route('/hypergraphx')
-def hypergraphx():
-     return render_template('hypergraphx.html')
+#@app.route('/hypergraphx')
+#def hypergraphx():
+     #return render_template('hypergraphx.html')
   
-@app.route('/riding')
-def riding():
-     return render_template('riding.html')
+#@app.route('/riding')
+#def riding():
+    # return render_template('riding.html')
 
-@app.route('/interview')
-def interview():
-     return render_template('interview.html')
+#@app.route('/interview')
+#def interview():
+     #return render_template('interview.html')
   
-@app.route('/digest')
-def digest():
-     return render_template('digest.html')
+#@app.route('/digest')
+#def digest():
+    # return render_template('digest.html')
   
-@app.route('/tools')
-def tools():
-     return render_template('tools.html')
+#@app.route('/tools')
+#def tools():
+     #return render_template('tools.html')
   
-@app.route('/cposter')
-def cposter():
-     return render_template('cposter.html')
+#@app.route('/cposter')
+#def cposter():
+   #  return render_template('cposter.html')
   
-if __name__ == '__main__':
-    app.run(debug=False)
+#if __name__ == '__main__':
+ #   app.run(debug=False)
     
     
 #subprocess.call("refresh")
