@@ -1,17 +1,2 @@
 # -*- coding: utf-8 -*-
-from git import Repo
-
-repo_dir = 'static'
-repo = Repo(repo_dir, search_parent_directories=True)
-file_list = [
-  'static/main.css',
-'static/reset.css'
-]
-commit_message = 'Add simple regression analysis'
-repo.index.add(file_list)
-repo.index.commit(commit_message)
-origin = repo.remote('origin')
-origin.push()
-
-info = origin.push()[0]
-print(info.summary)
+import subprocess
