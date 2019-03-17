@@ -10,5 +10,5 @@ file_list = [
 commit_message = 'Add simple regression analysis'
 repo.index.add(file_list)
 repo.index.commit(commit_message)
-origin = repo.create_remote('origin','https://github.com/vasilyakonov/GDPD-Draft.git')
+origin = repo.remote('origin')
 origin.push()
