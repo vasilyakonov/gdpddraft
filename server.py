@@ -203,4 +203,5 @@ with open("./docs/index.html", "w") as outf:
     
 #subprocess.call("refresh")
 u = uuid.uuid1()
-subprocess.call('git commit -a -m "%s"') % uuid.uuid1()
+#subprocess.call('git commit -a -m "%s"' % uuid.uuid1())
+subprocess.call('git push')
