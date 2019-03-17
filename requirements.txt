@@ -4,3 +4,4 @@ jinja2
 json
 flask
 gitpython
+git
