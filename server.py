@@ -197,7 +197,7 @@ with open("./docs/index.html", "w") as outf:
     print(soup.prettify())
     
 
-    
+
 
 #from flask import Flask
 
