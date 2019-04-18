@@ -53,8 +53,22 @@ print len(entries_list)
 
 #gradients_response = open('gradients.json').read()
 #the_gradients = json.loads(gradients_response)
-coldgradients_list = [
-                     ]
+coldgradients_list = ["Aqua",
+                      "Cyan",
+                      "PaleTurquoise",
+                      "Aquamarine",
+                      "Turquoise",
+                      "LightSteelBlue",
+                      "LightBlue",
+                      "PowderBlue",
+                      "SkyBlue",
+                      "LightSkyBlue",
+                      "DeepSkyBlue",
+                      "DodgerBlue",
+                      "CornflowerBlue",
+                      "Lavender",
+                      "Alice Blue"]
+
 warmgradients_list = ["Pink",
                       "HotPink",
                      "DeepPink",
@@ -69,15 +83,41 @@ warmgradients_list = ["Pink",
                      "Red",
                      "OrangeRed",
                      "Tomato",
-                     ]
-middlegradients_list = []
-warmergradients_list = []
+                     "Coral",
+                     "DarkOrange",
+                     "Orange",
+                     "SandyBrown",
+                     "Brown",
+                     "Maroon"]
+                  ]
+
+middlegradients_list = ["Gainsboro",
+                       "LightGray",
+                       "WhiteSmoke",
+                        "GhostWhite",
+                        "Mint Cream"]
+
+warmergradients_list = ["PapayaWhip",
+                       "Moccasin",
+                       "PeachPuff",
+                       "Cornsilk",
+                       "BlanchedAlmond",
+                       "Bisque",
+                        "LavenderBlush",
+                     "MistyRose",
+                        "Seashell",
+                        "Snow"
+                       ]
+
+coldgradient = '%s' % (random.choice(tuple(coldgradients_list)))
+warmgradient = '%s' % (random.choice(tuple(warmgradients_list)))
+middlegradient = '%s' % (random.choice(tuple(middlegradients_list)))
+warmergradient = '%s' % (random.choice(tuple(warmergradients_list)))
 
 
-
-for f in the_gradients:
+"""for f in the_gradients:
    gradients_list.append(f)
-print len(gradients_list)
+print len(gradients_list)"""
 
 
 # load the file
@@ -151,8 +191,8 @@ entries_list.remove(object12)
 
 soup.style.string =""
 
-gradient ='%s' % (random.choice(tuple(gradients_list)))
-soup.style.append(gradient)
+#gradient ='%s' % (random.choice(tuple(gradients_list)))
+soup.style.append()
 
 
 # save the file again
