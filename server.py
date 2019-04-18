@@ -48,7 +48,6 @@ entries_list = []
 
 
 
-
 for f in the_entries:
    entries_list.append(f)
 print len(entries_list)
