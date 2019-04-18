@@ -89,7 +89,7 @@ warmgradients_list = ["Pink",
                      "SandyBrown",
                      "Brown",
                      "Maroon"]
-                  ]
+                  
 
 middlegradients_list = ["Gainsboro",
                        "LightGray",
@@ -192,7 +192,7 @@ entries_list.remove(object12)
 soup.style.string =""
 
 #gradient ='%s' % (random.choice(tuple(gradients_list)))
-soup.style.append()
+soup.style.append("body{background-image: linear-gradient(%s, %s, %s, %s);}" % (coldgradient, middlegradient, warmergradient, warmgradient))
 
 
 # save the file again
