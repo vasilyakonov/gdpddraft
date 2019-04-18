@@ -17,6 +17,8 @@ src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FBerthold
 font-family: "Smilin_John";
 src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FSmilin_John.ttf?1551128665707");}
         body{background-image: linear-gradient(white, black, black, black, black, black);}
+  
+   @media screen and (max-width: 600px){
 
   nav {display: grid;
      grid-template-columns:30vh 1fr;
@@ -78,7 +80,71 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);}
+      transform: translate(-50%, -50%);}}
+  
+    nav {display: grid;
+     grid-template-columns:30vh 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+  
+  .grid{ display:grid;
+    height:120vh;
+     grid-template-rows: 20vh 1fr 10vh;
+
+}
+
+img {
+  width: 60vh;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background:white;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  
+    div{ display:grid;
+     
+  color: #000;
+  border-radius: initial;
+  
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 10px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+      height: auto;
+  position:relative;}
+  
+  .text{ font-family: "Standard";
+    font-size:12pt;
+    padding:5vh;
+    color:white;
+    background:transparent;}
+  
+    .nav{font-family: "Berthold Script";
+      font-size:20pt;}
+  
+      .nav:hover{font-family: "Smilin_John";}
+  .image{display:grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  a{text-decoration:none;
+  color:black;}
+     
+    object{width:50vh;
+      height: 30vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+      transform: translate(-50%, -50%);}
+  
+  
     </style>
     <!--<script src="/js/pdfobject.js"></script>
 <script>PDFObject.embed("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2Fpresentation_d.pdf?1551136164582", "#pdf");</script>-->
