@@ -67,9 +67,7 @@ with open("./docs/index.html") as inf:
     soup = bs4.BeautifulSoup(txt, features="html.parser")
     print(soup.prettify())
 
-# create new link
-#new_link = soup.new_tag("link", rel="icon", type="image/png", href="img/tor.png")
-# insert it into the document
+
 soup.main.string =""
 
 object1 = '%s' % (random.choice(tuple(entries_list)))
