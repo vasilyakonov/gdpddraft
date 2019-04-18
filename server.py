@@ -115,6 +115,7 @@ middlegradient = '%s' % (random.choice(tuple(middlegradients_list)))
 warmergradient = '%s' % (random.choice(tuple(warmergradients_list)))
 
 
+
 """for f in the_gradients:
    gradients_list.append(f)
 print len(gradients_list)"""
