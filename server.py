@@ -123,7 +123,6 @@ with open("./docs/index.html") as inf:
     soup = bs4.BeautifulSoup(txt, features="html.parser")
     print(soup.prettify())
 
-
 soup.main.string =""
 
 object1 = '%s' % (random.choice(tuple(entries_list)))
