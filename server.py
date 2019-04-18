@@ -129,6 +129,7 @@ with open("./docs/index.html") as inf:
 soup.main.string =""
 
 
+
 object1 = '%s' % (random.choice(tuple(entries_list)))
 
 soup.main.append(object1)
