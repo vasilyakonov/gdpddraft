@@ -19,7 +19,7 @@ src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FSmilin_J
        body{background-image: linear-gradient(white, black, black, black, black, black);
   } 
   
- 
+ @media screen and (max-width: 600px){
    
   nav {display: grid;
      grid-template-columns:30vh 1fr;
@@ -82,7 +82,14 @@ img {
   top: 50%;
   left: 50%;
       transform: translate(-50%, -50%);}
-
+  }
+  
+   iframe{width:10vh;
+      height: 15vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+      transform: translate(-50%, -50%);}
     </style>
     <!--<script src="/js/pdfobject.js"></script>
 <script>PDFObject.embed("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2Fpresentation_d.pdf?1551136164582", "#pdf");</script>-->
@@ -115,7 +122,7 @@ img {
       </div>-->
       
       <div id="pdf">
-        <iframe src="https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2Fnewspaper%20DONE%20BABY.pdf?1551158440732">
+        <iframe src="https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2Fnewspaper%20DONE%20BABY.pdf?1551158440732" >
           This browser does not support PDFs. Please download the PDF to view it:</iframe>
     
       </div>
