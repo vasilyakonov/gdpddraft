@@ -51,9 +51,28 @@ for f in the_entries:
 print len(entries_list)
 
 
-gradients_response = open('gradients.json').read()
-the_gradients = json.loads(gradients_response)
-gradients_list = []
+#gradients_response = open('gradients.json').read()
+#the_gradients = json.loads(gradients_response)
+coldgradients_list = [
+                     ]
+warmgradients_list = ["Pink",
+                      "HotPink",
+                     "DeepPink",
+                     "MediumVioletRed",
+                     "LightSalmon",
+                     "Salmon",
+                     "LightCoral",
+                     "IndianRed",
+                     "Crimson",
+                     "Firebrick",
+                     "DarkRed",
+                     "Red",
+                     "OrangeRed",
+                     "Tomato",
+                     ]
+middlegradients_list = []
+warmergradients_list = []
+
 
 
 for f in the_gradients:

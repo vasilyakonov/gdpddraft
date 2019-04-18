@@ -2,4 +2,4 @@
 
 
 
-python server.py && sleep 1m
+#python server.py && sleep 1m
