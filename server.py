@@ -201,7 +201,6 @@ with open("./docs/index.html", "w") as outf:
     print(soup.prettify())
 
 
-
 #from flask import Flask
 
 #from flask import Flask, render_template
