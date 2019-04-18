@@ -51,7 +51,6 @@ for f in the_entries:
 print len(entries_list)
 
 
-
 #gradients_response = open('gradients.json').read()
 #the_gradients = json.loads(gradients_response)
 coldgradients_list = ["Aqua",
