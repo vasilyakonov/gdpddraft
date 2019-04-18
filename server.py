@@ -67,9 +67,7 @@ coldgradients_list = ["Aqua",
                       "LightSkyBlue",
                       "DeepSkyBlue",
                       "DodgerBlue",
-                      "CornflowerBlue",
-                      "Lavender",
-                      "Alice Blue"]
+                      "CornflowerBlue"]
 
 warmgradients_list = ["Pink",
                       "HotPink",
