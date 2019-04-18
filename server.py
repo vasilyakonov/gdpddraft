@@ -200,6 +200,7 @@ with open("./docs/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
 
+    
 
 
 #from flask import Flask
