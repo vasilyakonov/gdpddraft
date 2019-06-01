@@ -1,3 +1,6 @@
-# worthit_iam
-
-A simple twitter bot using Molly White's basic framework for creating Twitter bots using Python 3 and [tweepy](http://www.tweepy.org). This goes along with Molly White's [tutorial](http://blog.mollywhite.net/twitter-bots-pt2/) on creating Twitter bots.
+<<<<<<< HEAD
+# GDPD-Draft
+A small test to see how well can I do with python pushing to GitHub
+=======
+# gdpddraft
+>>>>>>> cc32571a1f607fb5ede18818f5900a54089facb7

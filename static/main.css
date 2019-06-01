@@ -1,0 +1,278 @@
+/*@font-face {
+font-family: "Standard";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FStandard-Book.otf?1551126392235");}
+      
+      @font-face {
+font-family: "Berthold Script";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FBerthold%20Script%20Regular.ttf?1551132843478");}
+      
+      @font-face {
+font-family: "Smilin_John";
+src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FSmilin_John.ttf?1551128665707");}
+      
+@font-face{
+font-family: "Grotesque MT";
+  src: url("https://cdn.glitch.com/e9cbcd28-2d64-44fd-9346-b1b0922476ba%2FGrotesqueMT-Regular.otf?1551029471368")};
+}
+.hide{display:none;}
+nav {
+     display: grid;
+  column-width: auto;
+  background-color: #fff;
+  color: #000;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: "Standard";
+  font-size: 12pt;
+  margin: 0;
+ 
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;}
+      
+.seminav{display:grid;
+  grid-template-columns: 1fr 1fr 1fr;}
+  
+
+h2{
+font-family:"Grotesque MT";
+  font-size: 10pt;
+  font-weight:bold;
+  text-align: center;
+}
+i{ 
+font-family:"Berthold script";
+font-size: 13.1pt;
+}
+b{
+  mix-blend-mode: normal;
+color:white;}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Standard";
+  line-height: 100%;
+  min-height: 10vh;
+  
+  
+  
+   
+}
+.a1 {
+  grid-row: auto;
+  background-color: #fff;
+  display: grid;
+  color: #000;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: "Standard";
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  height:20vh;
+  position:relative;
+ 
+  
+}
+      
+      .container{  border: 1px dotted black;
+  grid-row: auto;
+  background-color: #fff;
+  display: grid;
+  color: #000;
+  mix-blend-mode: normal;
+  border-radius: initial;
+  font-family: "Standard";
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  position:relative;
+  isolation: isolate;}
+
+
+h1 {
+  
+  z-index:3;
+  margin-top:0px;
+  font-size: 10pt;
+  font-weight: bold;
+  font-family:"Grotesque MT";}
+
+img {
+  display:none;
+  width: 30vh;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+#fade2{
+  mix-blend-mode: normal;
+position: absolute;
+top: 50%;
+left: 50%;
+  z-index: 2;
+  isolation: isolate;
+}
+      a{text-decoration:none;
+      color:black;}
+      
+.headerchange{padding:10px;
+    font-size: 10pt;
+  font-weight: bold;
+  font-family:"Grotesque MT";
+  text-align: center;
+  }
+
+@media (min-width: 600px) {
+  main {
+    display: grid;
+     grid-template-columns: auto auto auto auto ;
+     grid-template-rows: 1fr 1fr 1fr;
+  }
+
+
+
+
+
+.a1 {
+  display: grid;
+  grid-row: auto;
+  column-width: 1fr;
+    background-color: #fff;
+  color: lightgray;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: "Standard";
+  font-size: 12pt;
+  margin: 0;
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  height:50vh;
+  position:relative;
+  opacity:0;
+  -webkit-transition: opacity .5s ease-out;
+}
+  
+  .a1:hover{  
+  grid-row: auto;
+  background-color: #fff;
+  display: grid;
+  color: black;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: "Standard";
+  font-size: 12pt;
+  margin: 0;
+  /*opacity: 0.9;*/
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+  position:relative;
+  isolation: isolate;
+  opacity:1;
+  -webkit-transition: color .5s ease-out;}
+  
+  
+  
+  
+  
+  
+  a{ text-decoration:none;}
+
+h1 {
+  background-color:transparent;
+  height:5vh;
+  width: 25vh;
+  z-index:3;
+  margin-top:0px;
+  font-weight: bold;
+  font-family:"Grotesque MT";
+}
+img {
+  display:grid;
+  width: 30vh;
+  height: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  background:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: normal;
+  }
+  nav {
+     display: grid;
+  grid-template-columns: 50vh 1fr ;
+     grid-template-rows: 9vh;
+    background-color: #fff;
+  color: #000;
+  mix-blend-mode: screen;
+  border-radius: initial;
+  font-family: "Standard";
+  font-size: 12pt;
+  margin: 0;
+  padding: 30px;
+  text-align: left;
+  margin-left: 0px;
+  margin-right:0px;
+    
+}
+#fade2{
+  mix-blend-mode: normal;
+  position: absolute;
+top: 50%;
+left: 50%;
+  z-index: 1;
+  isolation: isolate;
+  
+}
+  #fade3{
+    mix-blend-mode: screen;
+     position: absolute;
+top: 50%;
+left: 50%;
+  
+  }
+  .hide{display:none;}
+  
+  .headerchange{padding:5px;
+    font-size: 10pt;
+  font-weight: bold;
+  font-family:"Grotesque MT";
+    text-align: left;
+  }
+  .headerchange:hover{padding:5px;
+    font-size: 30pt;
+  font-weight: bold;
+  font-family:"Smilin_John";
+    text-align: left;
+    color:red;
+  }
+  .seminav{display:flex;
+  flex-direction: column;}
+  
+  h2{
+font-family:"Grotesque MT";
+  font-size: 10pt;
+  font-weight:bold;
+  text-align: left;
+}
+
+}

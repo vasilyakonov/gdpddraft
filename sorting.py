@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
 import os
 import requests
 import random
@@ -10,10 +9,6 @@ import bs4
 import jinja2
 import subprocess
 import json
-import uuid
-
-
-u = uuid.uuid1()
 
 from bs4 import BeautifulSoup 
 
@@ -48,88 +43,31 @@ the_entries = json.loads(entries_response)
 entries_list = []
 
 
-
 for f in the_entries:
    entries_list.append(f)
 print len(entries_list)
 
-#gradients_response = open('gradients.json').read()
-#the_gradients = json.loads(gradients_response)
-coldgradients_list = ["Aqua",
-                      "Cyan",
-                      "PaleTurquoise",
-                      "Aquamarine",
-                      "Turquoise",
-                      "LightSteelBlue",
-                      "LightBlue",
-                      "PowderBlue",
-                      "SkyBlue",
-                      "LightSkyBlue",
-                      "DeepSkyBlue",
-                      "DodgerBlue",
-                      "CornflowerBlue"]
 
-warmgradients_list = ["Pink",
-                      "HotPink",
-                     "DeepPink",
-                     "MediumVioletRed",
-                     "LightSalmon",
-                     "Salmon",
-                     "LightCoral",
-                     "IndianRed",
-                     "Crimson",
-                     "Firebrick",
-                     "DarkRed",
-                     "Red",
-                     "OrangeRed",
-                     "Tomato",
-                     "Coral",
-                     "DarkOrange",
-                     "Orange",
-                     "SandyBrown",
-                     "Brown",
-                     "Maroon"]
-                  
-
-middlegradients_list = ["Gainsboro",
-                       "LightGray",
-                       "WhiteSmoke",
-                        "GhostWhite",
-                        "Mint Cream"]
-
-warmergradients_list = ["PapayaWhip",
-                       "Moccasin",
-                       "PeachPuff",
-                       "Cornsilk",
-                       "BlanchedAlmond",
-                       "Bisque",
-                        "LavenderBlush",
-                     "MistyRose",
-                        "Seashell",
-                        "Snow"
-                       ]
-
-coldgradient = '%s' % (random.choice(tuple(coldgradients_list)))
-warmgradient = '%s' % (random.choice(tuple(warmgradients_list)))
-middlegradient = '%s' % (random.choice(tuple(middlegradients_list)))
-warmergradient = '%s' % (random.choice(tuple(warmergradients_list)))
+gradient_response = open('gradients.json').read()
+the_gradients = json.loads(gradients_response)
+gradients_list = []
 
 
-
-"""for f in the_gradients:
+for f in the_gradients:
    gradients_list.append(f)
-print len(gradients_list)"""
+print len(gradients_list)
 
 
 # load the file
-with open("./docs/index.html") as inf:
+with open("./templates/index.html") as inf:
     txt = inf.read()
     soup = bs4.BeautifulSoup(txt, features="html.parser")
     print(soup.prettify())
 
+# create new link
+#new_link = soup.new_tag("link", rel="icon", type="image/png", href="img/tor.png")
+# insert it into the document
 soup.main.string =""
-
-
 
 object1 = '%s' % (random.choice(tuple(entries_list)))
 
@@ -191,78 +129,14 @@ object12 = '%s' % (random.choice(tuple(entries_list)))
 soup.main.append(object12)
 entries_list.remove(object12)
 
-soup.style.string =""
+gradient ='%s' % (random.choice(tuple(gradients_list)))
+soup.style.append(gradient)
 
-#gradient ='%s' % (random.choice(tuple(gradients_list)))
-soup.style.append("body{background-image: linear-gradient(%s, %s, %s, %s);}" % (coldgradient, middlegradient, warmergradient, warmgradient))
 
 
 # save the file again
-with open("./docs/index.html", "w") as outf:
+with open("./templates/index.html", "w") as outf:
     outf.write(str(soup.prettify(formatter=None)))
     print(soup.prettify())
+
     
-
-
-#from flask import Flask
-
-#from flask import Flask, render_template
-
-#app = Flask(__name__)
-
-#@app.route('/')
-#def index():
-     #return render_template('index.html')
-  
-#@app.route('/calendar')
-#def calendar():
-    # return render_template('calendar.html')
-  
-#@app.route('/typefaces')
-#def typefaces():
-     #return render_template('typefaces.html')
-  
-#@app.route('/lugemik')
-#def lugemik():
-     #return render_template('lugemik.html')
-  
-#@app.route('/imposter')
-#def imposter():
-     #return render_template('imposter.html')
-
-#@app.route('/hypergraphx')
-#def hypergraphx():
-     #return render_template('hypergraphx.html')
-  
-#@app.route('/riding')
-#def riding():
-    # return render_template('riding.html')
-
-#@app.route('/interview')
-#def interview():
-     #return render_template('interview.html')
-  
-#@app.route('/digest')
-
-
-#def digest():
-    # return render_template('digest.html')
-  
-#@app.route('/tools')
-#def tools():
-     #return render_template('tools.html')
-  
-#@app.route('/cposter')
-#def cposter():
-   #  return render_template('cposter.html')
-  
-#if __name__ == '__main__':
- #   app.run(debug=False)
-    
-    
-#subprocess.call("refresh")
-u = uuid.uuid1()
-#subprocess.call('git commit -a -m "%s"' % uuid.uuid1())
-process = subprocess.Popen(["git", "commit", "-a", "-m'%s'" % uuid.uuid1()], stdout=subprocess.PIPE)
-output = process.communicate()[0]
-output = subprocess.check_output(["git", "push"])
