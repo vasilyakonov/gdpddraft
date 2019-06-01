@@ -268,6 +268,4 @@ process = subprocess.Popen(["git", "commit", "-a", "-m'%s'" % uuid.uuid1()], std
 output = process.communicate()[0]
 output = subprocess.check_output(["git", "push"])
 print(datetime.datetime.today().weekday())
-
-IF 
 #output = subprocess.check_output(["git", "gc", "--aggressive"])
