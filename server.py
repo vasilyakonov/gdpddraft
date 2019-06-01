@@ -266,4 +266,4 @@ u = uuid.uuid1()
 process = subprocess.Popen(["git", "commit", "-a", "-m'%s'" % uuid.uuid1()], stdout=subprocess.PIPE)
 output = process.communicate()[0]
 output = subprocess.check_output(["git", "push"])
-#output = subprocess.check_output(["git", "pull"])
+#output = subprocess.check_output(["git", "gc"])
