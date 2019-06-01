@@ -267,5 +267,5 @@ u = uuid.uuid1()
 process = subprocess.Popen(["git", "commit", "-a", "-m'%s'" % uuid.uuid1()], stdout=subprocess.PIPE)
 output = process.communicate()[0]
 output = subprocess.check_output(["git", "push"])
-print(datetime.datetime.weekday())
+print(datetime.datetime.today().weekday())
 #output = subprocess.check_output(["git", "gc", "--aggressive"])
